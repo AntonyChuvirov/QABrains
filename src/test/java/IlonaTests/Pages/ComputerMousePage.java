@@ -1,4 +1,4 @@
-package IlonaTests;
+package Pages;
 
 import BaseClasses.BasePage;
 import org.openqa.selenium.By;
