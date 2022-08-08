@@ -1,5 +1,6 @@
 package TestsLev;
 
+import BaseClasses.TestInit;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -11,8 +12,9 @@ import org.testng.annotations.Test;
 public class CheckGoToSearh extends TestInit {
     @Test
     public void goToSearch(){
-        HomePagejapan();
-        myElement().sendKeys("Instruments\n");
+      openUrl("https://japan-ukraine.com/ua/");
+      driver.findElement(By.xpath("//input[@id = 'search']")).sendKeys("Instruments\n");
+    
     }
 
 }
