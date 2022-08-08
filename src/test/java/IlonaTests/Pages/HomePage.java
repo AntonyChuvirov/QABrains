@@ -1,4 +1,4 @@
-package IlonaTests;
+package IlonaTests.Pages;
 
 import BaseClasses.BasePage;
 import org.openqa.selenium.By;
@@ -9,9 +9,14 @@ public class HomePage extends BasePage {
     public HomePage(WebDriver driver) {
         super(driver);
     }
-
     public WebElement getSearchField() {
 
         return driver.findElement(By.xpath("//input[@name = 'search']"));
     }
+    public void clickTheBtnCatalog(){
+        driver.findElement(By.xpath("//*[@id = 'fat-menu']")).click();
+    }
 }
+
+
+
