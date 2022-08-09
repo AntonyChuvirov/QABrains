@@ -3,7 +3,7 @@ package TestsOlgaVerom;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import TestsOlgaVerom.pageObjects.RozetkaHomePageHelper;
-import tests.TestInit;
+import BaseClasses.TestInit;
 
 public class TestRozetka extends TestInit {
     @Test
