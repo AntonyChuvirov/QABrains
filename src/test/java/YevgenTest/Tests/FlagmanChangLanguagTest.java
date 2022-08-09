@@ -1,6 +1,8 @@
-package YevgenTest;
+package YevgenTest.Tests;
 
 import BaseClasses.TestInit;
+
+import YevgenTest.PageObjects.FlagHomePage;
 import org.testng.annotations.Test;
 
 public class FlagmanChangLanguagTest extends TestInit {
@@ -8,8 +10,7 @@ public class FlagmanChangLanguagTest extends TestInit {
     @Test
     public void changesLanguages(){
         FlagHomePage flagHomePage = new FlagHomePage(driver);
-
-        openUrl("https://www.flagman.kiev.ua/");
+        flagHomePage.navigateFlagman();
         flagHomePage.checkLanguageRu();
         flagHomePage.checkLanguageUa();
     }
