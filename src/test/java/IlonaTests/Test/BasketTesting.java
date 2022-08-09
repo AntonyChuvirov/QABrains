@@ -44,6 +44,10 @@ public class BasketTesting  extends TestInit {
             clickOnBtnBasketPage.clickOnBasket().click();
         }
         sleep(5);
-        Assert.assertTrue(checkBasketPage.basketVisible().isDisplayed());
+        try {
+        Assert.assertTrue(checkBasketPage.basketVisible1().isDisplayed());
+        } catch (Exception b) {
+            Assert.assertTrue(checkBasketPage.basketVisible().isDisplayed());
+        }
     }
 }

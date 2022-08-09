@@ -12,4 +12,7 @@ public class CheckBasketPage extends BasePage {
     public WebElement basketVisible(){
         return driver.findElement(By.xpath("//h3[@class = 'modal__heading']"));
     }
+    public WebElement basketVisible1(){
+        return driver.findElement(By.xpath("//h1[@class = 'cart-page__heading']"));
+    }
 }
