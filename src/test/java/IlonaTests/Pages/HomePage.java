@@ -16,7 +16,11 @@ public class HomePage extends BasePage {
     public void clickTheBtnCatalog(){
         driver.findElement(By.xpath("//*[@id = 'fat-menu']")).click();
     }
+    public WebElement clickTheBtnOpenMenu(){
+        return driver.findElement(By.xpath("//button[@class = 'header__button ng-tns-c94-1']"));
+    }
 }
+
 
 
 
