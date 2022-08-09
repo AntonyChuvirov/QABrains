@@ -1,12 +1,8 @@
-package IlonaTests;
+package IlonaTests.Test;
 
-import BaseClasses.BasePage;
 import BaseClasses.TestInit;
-import Pages.ComputerMousePage;
-import Pages.HomePage;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import IlonaTests.Pages.HomePage;
+import IlonaTests.Pages.ComputerMousePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -17,6 +13,7 @@ public class SearchFieldTest  extends TestInit {
         HomePage homePage = new HomePage(driver);
         ComputerMousePage computerMouse = new ComputerMousePage(driver);
         homePage.getSearchField().sendKeys("Мишка\n");
+        sleep(2);
         Assert.assertTrue(computerMouse.computerMouseVisible().isDisplayed());
     }
 
