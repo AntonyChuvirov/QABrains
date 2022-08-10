@@ -2,8 +2,8 @@ package IlonaTests;
 
 import BaseClasses.BasePage;
 import BaseClasses.TestInit;
+import IlonaTests.Pages.HomePage;
 import Pages.ComputerMousePage;
-import Pages.HomePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

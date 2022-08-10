@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "SuiteTests">
+
+    <test name = "TestRozetka">
+        <classes>
+            <class name = "TestsOlya.TestRozetka" />
+        </classes>
+    </test>
+
+    <test name = "TestProm">
+        <classes>
+            <class name = "TestsOlya.TestProm" />
+        </classes>
+    </test>
+
+</suite>
