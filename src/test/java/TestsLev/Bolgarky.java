@@ -1,4 +1,4 @@
-package TestsLev.Japan;
+package TestsLev;
 
 import BaseClasses.TestInit;
 import org.openqa.selenium.By;

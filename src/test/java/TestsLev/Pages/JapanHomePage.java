@@ -1,4 +1,4 @@
-package TestsLev.Japan.Pages;
+package TestsLev.Pages;
 
 import BaseClasses.BasePage;
 import org.openqa.selenium.By;
