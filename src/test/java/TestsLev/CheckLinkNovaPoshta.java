@@ -9,9 +9,10 @@ public class CheckLinkNovaPoshta extends TestInit {
     @Test
     public void getLink() {
         HeaderPage headerPage = new HeaderPage(driver);
+        DeliveryPages deliveryPages = new DeliveryPages(driver);
+
         openUrl("https://japan-ukraine.com/ua");
         headerPage.getDelivery().click();
-        DeliveryPages deliveryPages = new DeliveryPages(driver);
         deliveryPages.linkNP().click();
         sleep(10);
     }
