@@ -25,4 +25,7 @@ public class HeaderPage extends BasePage {
     public WebElement getCliclBtnCall(){
         return driver.findElement(By.xpath("(//input[@class = 'general-vote'])[4]"));
     }
+    public WebElement getDelivery(){
+        return driver.findElement(By.xpath("(//div[@class='m-link'])[3]"));
+    }
 }
