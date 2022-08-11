@@ -1,4 +1,4 @@
-package TestsLev;
+package TestsLev.Tests;
 
 import BaseClasses.TestInit;
 import org.openqa.selenium.By;
