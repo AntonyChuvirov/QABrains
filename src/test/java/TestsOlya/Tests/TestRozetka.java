@@ -1,4 +1,4 @@
-package TestsOlya;
+package TestsOlya.Tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

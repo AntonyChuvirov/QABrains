@@ -1,4 +1,4 @@
-package TestsOlya;
+package TestsOlya.Tests;
 
 import org.testng.annotations.Test;
 import TestsOlya.pageObject.PromHomePageHelper;

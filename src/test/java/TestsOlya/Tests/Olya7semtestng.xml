@@ -5,13 +5,13 @@
 
     <test name = "TestRozetka">
         <classes>
-            <class name = "TestsOlya.TestRozetka" />
+            <class name = "TestsOlya.Tests.TestRozetka" />
         </classes>
     </test>
 
     <test name = "TestProm">
         <classes>
-            <class name = "TestsOlya.TestProm" />
+            <class name = "TestsOlya.Tests.TestProm" />
         </classes>
     </test>
 
