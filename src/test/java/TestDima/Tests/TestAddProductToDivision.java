@@ -18,8 +18,8 @@ public class TestAddProductToDivision extends TestInit {
         homePage.inputToSearchFieldPhone();
         homePage.clickSearchBtn();
         sleep(5);
-        Assert.assertTrue(productsPageElements.showFindingProducts().isDisplayed());
-        productsPage.choosePhone();
+        Assert.assertTrue(productsPageElements.checkFindingProducts().isDisplayed());
+        productsPage.clickPhone();
         sleep(2);
         productsPage.addProductToDivision();
         sleep(2);

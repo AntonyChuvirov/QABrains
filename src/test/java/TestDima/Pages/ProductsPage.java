@@ -9,11 +9,30 @@ public class ProductsPage extends ProductsPageElements {
         super(driver);
     }
 
-    public void choosePhone() {
+    public void clickPhone() {
         getPhone().click();
+    }
+
+    public void clickSmartTv(){
+        getSmartTvNokia().click();
     }
 
     public void addProductToDivision() {
         getBtnAddToDivision().click();
     }
-}
+
+    public void clickBtnAddedToDivision(){
+        getBtnAddedToDivision().click();
+    }
+
+    public void clickBtnCleanDivision(){
+        getBtnCleanDivision().click();
+    }
+
+
+    public void clickContinueWorking(){
+        getBtnContinueWorking().click();
+    }
+
+    }
+

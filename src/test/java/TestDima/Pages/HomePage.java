@@ -7,7 +7,10 @@ public class HomePage extends HomePageElements {
         super(driver);
     }
 
-    public void writeProductInSearchField() {
+    public void goToHotline() {
+        driver.get("https://hotline.ua/");
+    }
+    public void inputToSearchFieldLaptop() {
         getSearchField().sendKeys("Ноутбук");
     }
 
@@ -20,7 +23,16 @@ public class HomePage extends HomePageElements {
 
     }
 
-    public void goToHotline() {
-        driver.get("https://hotline.ua/");
+
+    public void inputToSearchFieldSmartTv(){
+        getSearchField().sendKeys("SmartTv");
+    }
+
+    public void clickBtnAddedToDivision(){
+        getBtnAddedToDivision().click();
+    }
+
+    public void clickBtnCleanDivision(){
+        getBtnCleanDivision().click();
     }
 }
