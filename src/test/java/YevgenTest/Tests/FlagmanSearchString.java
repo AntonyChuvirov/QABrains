@@ -1,6 +1,6 @@
 package YevgenTest.Tests;
 
-import BaseClasses.TestInit;
+import TestsOlgaVerom.pageObjects.TestInit;
 import YevgenTest.PageObjects.FlagHomePage;
 import org.testng.annotations.Test;
 

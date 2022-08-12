@@ -1,6 +1,6 @@
 package IlonaTests.Test;
 
-import BaseClasses.TestInit;
+import TestsOlgaVerom.pageObjects.TestInit;
 import IlonaTests.Pages.HomePage;
 import IlonaTests.Pages.ComputerMousePage;
 import org.testng.Assert;

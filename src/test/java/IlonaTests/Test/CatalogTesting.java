@@ -1,6 +1,6 @@
 package IlonaTests.Test;
 
-import BaseClasses.TestInit;
+import TestsOlgaVerom.pageObjects.TestInit;
 import IlonaTests.Pages.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
