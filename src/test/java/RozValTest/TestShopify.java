@@ -1,8 +1,10 @@
-package tests;
+package RozValTest;
 
 import BaseClasses.TestInit;
 import RozValTest.ShopifyMainPage;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -13,12 +15,18 @@ import java.time.Duration;
 import java.util.ArrayList;
 
 import java.time.Duration;
+import java.util.List;
+import java.util.Objects;
+import java.util.Stack;
 
 public class TestShopify extends TestInit {
 
-    public void goToShopify(){driver.get("https://www.shopify.com/restaurant-online-ordering");}
+    public void goToShopify() {
+        driver.get("https://www.shopify.com");
+    }
+
     @Test
-    public void checkHeader()  {
+    public void shopifyCheckHeader() {
 
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("resolution", "1980x1080");
@@ -26,7 +34,7 @@ public class TestShopify extends TestInit {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(300));
 
         ShopifyMainPage shopifyMainPage = new ShopifyMainPage(driver);
-
+        System.out.println("================= ShopifyTest #1 =================");
         //Start
         goToShopify();
 
@@ -55,6 +63,7 @@ public class TestShopify extends TestInit {
         //Manage
         shopifyMainPage.getLogoShopify().click();
         shopifyMainPage.getManageBtn().click();
+        sleep(1);
         Assert.assertTrue(shopifyMainPage.getManagePaymentsBtn().isDisplayed());
         shopifyMainPage.getManagePaymentsBtn().click();
         sleep(2);
@@ -82,9 +91,10 @@ public class TestShopify extends TestInit {
 
 
     }
+
     // I use this to handle some parts of big test that is shown upper
-    @Test
-    public void errorHolder(){
+    /*@Test
+    public void shopifyErrorHolder() {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("resolution", "1980x1080");
         driver.manage().window().maximize();
@@ -95,5 +105,88 @@ public class TestShopify extends TestInit {
 
         //place your code here
 
+    }*/
+
+    @Test
+    public void shopifyMainPageCheckImg() {
+        DesiredCapabilities caps = new DesiredCapabilities();
+
+        driver.manage().window().maximize();
+
+        System.out.println("================= ShopifyTest #2 =================");
+        ShopifyMainPage shopifyMainPage = new ShopifyMainPage(driver);
+        goToShopify();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+        jse.executeScript("window.scrollBy(0,4000)");
+
+        List<WebElement> imgList = shopifyMainPage.getShopifyMainPageAllImg();
+
+
+        for (WebElement webElement : imgList) {
+            try {
+                jse.executeScript("arguments[0].scrollIntoView(true);", webElement);
+                String classEl = webElement.getAttribute("class");
+                Assert.assertTrue(webElement.isDisplayed());
+                String alt = webElement.getAttribute("alt");
+                System.out.println("Element displayed     " + classEl + "  " + alt);
+            } catch (AssertionError e) {
+                String classEl = webElement.getAttribute("class");
+                String alt = webElement.getAttribute("alt");
+                System.out.println("Element not displayed " + classEl + "  " + alt);
+            }
+        }
+        System.out.println("Amount of all image elements detected at mainPage = " + imgList.size());
+
+    }
+
+    @Test
+    public void shopifyCheckFooterTopA() {
+        DesiredCapabilities caps = new DesiredCapabilities();
+
+        driver.manage().window().maximize();
+
+        System.out.println("================= ShopifyTest #3 =================");
+        ShopifyMainPage shopifyMainPage = new ShopifyMainPage(driver);
+        goToShopify();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+
+
+        List<WebElement> footerTopAList = shopifyMainPage.getShopifyFooterTopA();
+        // element index counter
+        int a = 0;
+        //TODO I wanna make an algorithm, where driver clicks href at footer, goes to this link, and then backs to https://www.shopify.com/
+        //Everything worked fine until href at xpath //div[@class='footer-top']//li[12]//a[1] because it leads to https://www.shopify.com/
+        //and thenalgorithm fucks-up
+
+        /*for (WebElement webElement : footerTopAList) {
+
+            jse.executeScript("arguments[0].scrollIntoView(true);", webElement);
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
+            Assert.assertTrue(webElement.isDisplayed());
+
+            String href = webElement.getAttribute("href");
+            a++;
+            System.out.println(a  +" "+ webElement.getAccessibleName() + " element with href " + href + " displayed");
+
+            webElement.click();
+            driver.navigate().back();
+
+
+        }*/
+        for (WebElement webElement : footerTopAList) {
+            jse.executeScript("arguments[0].scrollIntoView(true);", webElement);
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
+            Assert.assertTrue(webElement.isDisplayed());
+
+            String href = webElement.getAttribute("href");
+            a++;
+            System.out.println(a  +" "+ webElement.getAccessibleName() + " element with href " + href + " displayed");
+
+        }
+        System.out.println("All number of href elements Footer-Top - " + footerTopAList.size());
     }
 }

@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class ShopifyMainPage extends BasePage {
 
     public ShopifyMainPage(WebDriver driver) {
@@ -12,7 +14,7 @@ public class ShopifyMainPage extends BasePage {
     }
 
 
-    //test 1 - header elements
+    //test 1 - header elements ===================================================================================
 
     public WebElement getLogoShopify() {
         return driver.findElement(By.xpath("//a[@data-ga-action='Logo']"));
@@ -103,4 +105,15 @@ public class ShopifyMainPage extends BasePage {
     public WebElement getLearnMerchantBlogShopifyTodayLabel() {
         return driver.findElement(By.xpath("//h1[contains(text(), 'with Shopify today')]"));
     }
+
+    //2 test elements ===================================================================================
+    public List<WebElement> getShopifyMainPageAllImg() {
+        return driver.findElements(By.xpath("//img"));//[contains(@class, 'lazyloaded')]
+    }
+
+    //3 test elements ===================================================================================
+    public List<WebElement> getShopifyFooterTopA() {
+        return driver.findElements(By.xpath("//div[contains(@class, 'footer-top')]//li//a"));
+    }
+
 }
