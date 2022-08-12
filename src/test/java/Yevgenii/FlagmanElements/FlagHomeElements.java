@@ -74,3 +74,5 @@ public class FlagHomeElements extends BasePage {
         return $("//div[@name='msg']");
     }
 }
+
+

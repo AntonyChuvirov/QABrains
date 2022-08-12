@@ -1,7 +1,6 @@
 package Yevgenii.FlagmanElements;
 
 import BaseClasses.BasePage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -25,5 +24,13 @@ public class FlagEholotElements extends BasePage {
 
     public WebElement getResaultCompareBtn() {
         return $("//span[@class='compare-count']");
+    }
+
+    public WebElement getBasketBtn(){
+        return $("//i[@onmousedown='try { rrApi.addToBasket(248992) } catch(e) {}']");
+    }
+
+    public WebElement getVisibleBasket(){
+        return $("//h1[@class='popup-title']");
     }
 }
