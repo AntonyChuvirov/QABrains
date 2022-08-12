@@ -12,10 +12,18 @@ public class FlagEholotElements extends BasePage {
     }
 
     public WebElement clickEholotBtn(){
-        return driver.findElement(By.xpath("//a[text()='Ехолоти']"));
+        return $("//a[text()='Ехолоти']");
     }
 
     public WebElement clickSortingEholotBtn(){
-        return driver.findElement(By.xpath("//div[contains(@class,'hidden-xs')]//child::select"));
+        return $("//div[contains(@class,'hidden-xs')]//child::select");
+    }
+
+    public WebElement clickCompareBtn(){
+        return $("//div[contains(@goods-data-gtm, 'Lucky FF 518')]//child::ul/li[@name='compare_details']");
+    }
+
+    public WebElement getResaultCompareBtn(){
+        return $("//span[@class='compare-count']");
     }
 }

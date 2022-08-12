@@ -23,4 +23,9 @@ public class FlagEholotPage extends FlagEholotElements {
         clickSortingEholotBtn().sendKeys("по цене (от дорогих)");
         return this;
     }
+
+    public FlagEholotPage selectCompareBtn(){
+        clickCompareBtn().click();
+        return this;
+    }
 }
