@@ -13,11 +13,9 @@ public class TestSearchField extends TestInit {
         HomePage homePage = new HomePage(driver);
         HomePageElements homePageElements = new HomePageElements(driver);
         homePage.goToHotline();
-        homePage.writeProductInSearchField();
-        sleep(2);
+        homePage.inputToSearchFieldLaptop();
         Assert.assertTrue(homePageElements.getSearchBtn().isDisplayed());
         homePage.clickSearchBtn();
         Assert.assertTrue(homePage.getSearchField().isDisplayed());
-        sleep(5);
     }
 }
