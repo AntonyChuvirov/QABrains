@@ -28,4 +28,9 @@ public class FlagEholotPage extends FlagEholotElements {
         clickCompareBtn().click();
         return this;
     }
+
+    public FlagEholotPage selectBasketBtn(){
+        getBasketBtn().click();
+        return this;
+    }
 }
