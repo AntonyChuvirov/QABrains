@@ -11,31 +11,31 @@ public class HomePageElements extends BasePage {
     }
 
     public WebElement getSearchField() {
-        return driver.findElement(By.xpath("//input[@id='searchbox']"));
+        return $("//input[@id='searchbox']");
     }
 
     public WebElement getBtnCleanDivision(){
-        return driver.findElement(By.xpath("//a[@href='#']"));
+        return $("//a[@href='#']");
     }
 
     public WebElement getBtnAddedToDivision(){
-        return driver.findElement(By.xpath("//span[text()='Порівняння']"));
+        return $("//span[text()='Порівняння']");
 
     }
 
     public WebElement getSearchBtn() {
-        return driver.findElement(By.xpath("//input[@id='doSearch']"));
+        return $("//input[@id='doSearch']");
     }
 
     public WebElement getResultSearch() {
-        return driver.findElement(By.xpath("//div[@class='search__title']"));
+        return $("//div[@class='search__title']");
     }
 
     public WebElement showProductNullInDivision(){
-        return driver.findElement(By.xpath("//div[contains(text(),'Ваш список \"Порівняння\" порожній.')]"));
+        return $("//div[contains(text(),'Ваш список \"Порівняння\" порожній.')]");
     }
 
     public WebElement showProductInDivision(){
-        return driver.findElement(By.xpath("//a[contains(text(),'Очистити список \"Порівняння\"')]"));
+        return $("//a[contains(text(),'Очистити список \"Порівняння\"')]");
     }
 }
