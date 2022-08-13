@@ -10,7 +10,7 @@ public class ProductsPageElements extends BasePage {
         super(driver);
     }
 
-    public WebElement getPhone() {
+    public WebElement getRealme8pro() {
         return $("//img[@src='/img/tx/318/318547231_s265.jpg']");
     }
 
@@ -18,7 +18,43 @@ public class ProductsPageElements extends BasePage {
         return $("//a[contains(text(),'Nokia Smart TV 4300D')]");
     }
 
-    public WebElement getBtnContinueWorking(){
+    public WebElement getBtnAddProductToMyLists(){
+        return $("//div[@class='search-list__body']/div[3]//div[@class='bookmark-button__title text-sm link link--gray']");
+    }
+
+    public WebElement getWindowWithNameAddingProductToMyLists(){
+        return $("//div[@class='product__title text-md']");
+    }
+
+    public WebElement getBtnSaveInMyList(){
+        return $("//button[@class='footer__btn btn btn--graphite']");
+    }
+
+    public WebElement getBtnContinueAfterAddingToDivision(){
+        return $("//button[@class='footer__btn btn btn--transparent']");
+    }
+
+
+    public WebElement getResultFindingProduct(){
+        return $("//div[@class='search__title']");
+    }
+
+    public WebElement getTextWithProductSavedToList(){
+        return $("//div[@class='modal__title']");
+    }
+
+    public WebElement getBtnGoToList(){
+        return $("//a[.='Перейти до списку']");
+
+    }
+
+    public WebElement getBtnDellAll(){
+        return $("//span[@class='link-action']");
+    }
+
+
+
+    public WebElement getBtnContinueWorkingAfterRemove(){
         return $("//button[@class='footer__btn btn btn--transparent']");
     }
 
@@ -47,7 +83,7 @@ public class ProductsPageElements extends BasePage {
         return $("//i[@class='icon icon--delete']");
     }
 
-    public WebElement getResultDivision() {
+    public WebElement getWindowResultDivision() {
         return $("//div[@class='products-item__title text-sm']");
     }
 }

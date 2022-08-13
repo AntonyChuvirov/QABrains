@@ -14,6 +14,8 @@ public class HomePageElements extends BasePage {
         return $("//input[@id='searchbox']");
     }
 
+
+
     public WebElement getBtnCleanDivision(){
         return $("//a[@href='#']");
     }
