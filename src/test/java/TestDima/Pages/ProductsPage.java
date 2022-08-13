@@ -9,15 +9,25 @@ public class ProductsPage extends ProductsPageElements {
         super(driver);
     }
 
-    public void clickPhone() {
-        getPhone().click();
+    public void clickRealme8pro() {
+        getRealme8pro().click();
     }
 
     public void clickSmartTv(){
         getSmartTvNokia().click();
     }
 
-    public void addProductToDivision() {
+    public void clickBtnAddProductToMyLists(){
+        getBtnAddProductToMyLists().click();
+    }
+
+    public void clickBtnSaveInMyList(){
+        getBtnSaveInMyList().click();
+    }
+
+
+
+    public void clickBtnAddToDivision() {
         getBtnAddToDivision().click();
     }
 
@@ -25,14 +35,26 @@ public class ProductsPage extends ProductsPageElements {
         getBtnAddedToDivision().click();
     }
 
+
     public void clickBtnCleanDivision(){
         getBtnCleanDivision().click();
     }
 
 
-    public void clickContinueWorking(){
-        getBtnContinueWorking().click();
+    public void clickContinueWorkingAfterRemove(){
+        getBtnContinueWorkingAfterRemove().click();
     }
+
+
+    public void clickBtnGoToList(){
+        getBtnGoToList().click();
+    }
+
+    public void clickBtnContinueAfterAddingToDivision(){
+        getBtnContinueAfterAddingToDivision().click();
+    }
+
+
 
     }
 
