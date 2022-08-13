@@ -29,7 +29,7 @@ public class FlagEholotPage extends FlagEholotElements {
         return this;
     }
 
-    public FlagEholotPage selectBasketBtn(){
+    public FlagEholotPage selectBasketBtn() {
         getBasketBtn().click();
         return this;
     }
