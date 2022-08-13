@@ -11,7 +11,7 @@ public class TestCheckBasket extends TestInit {
 
     @Test
     @Description("Check whether the product is added to the basket")
-    public void checkAddBasket(){
+    public void checkAddBasket() {
         FlagHomePage flagHomePage = new FlagHomePage(driver);
         FlagEholotPage flagEholotPage = new FlagEholotPage(driver);
 

@@ -10,7 +10,7 @@ public class TestSortingEholot extends TestInit {
 
     @Test
     @Description("Check product sorting in the sonar section")
-    public void checkSortingEholot(){
+    public void checkSortingEholot() {
         FlagHomePage flagHomePage = new FlagHomePage(driver);
         FlagEholotPage flagEholotPage = new FlagEholotPage(driver);
 
