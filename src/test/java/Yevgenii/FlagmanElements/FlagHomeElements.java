@@ -73,6 +73,12 @@ public class FlagHomeElements extends BasePage {
     public WebElement getVisibilityApplicationCall() {
         return $("//div[@name='msg']");
     }
+
+    public WebElement getFieldNewsSubscription() {
+        return $("//input[@id='subscribeEmailInput']");
+    }
+
+    public WebElement getFieldNewsSubscriptionBtn() {
+        return $("//button[@name='subscribe']");
+    }
 }
-
-
