@@ -1,23 +1,17 @@
 package RozValTest;
 
 import BaseClasses.TestInit;
-import RozValTest.ShopifyMainPage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
-import java.util.ArrayList;
 
-import java.time.Duration;
 import java.util.List;
-import java.util.Objects;
-import java.util.Stack;
+
+import static java.lang.String.valueOf;
 
 public class TestShopify extends TestInit {
 
@@ -31,7 +25,7 @@ public class TestShopify extends TestInit {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("resolution", "1980x1080");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(300));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         ShopifyMainPage shopifyMainPage = new ShopifyMainPage(driver);
         System.out.println("================= ShopifyTest #1 =================");
@@ -53,6 +47,7 @@ public class TestShopify extends TestInit {
         //Market
         Assert.assertTrue(shopifyMainPage.getMarketBtn().isDisplayed());
         shopifyMainPage.getMarketBtn().click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         Assert.assertTrue(shopifyMainPage.getMarketEmailMarketingBtn().isDisplayed());
         shopifyMainPage.getMarketEmailMarketingBtn().click();
         Assert.assertTrue(shopifyMainPage.getMarketLogToCreateCampaignBtn().isDisplayed());
@@ -72,8 +67,8 @@ public class TestShopify extends TestInit {
         Assert.assertTrue(shopifyMainPage.getManagePaymentsInstallmentsFiftyPercentsStrong().isDisplayed());
 
         //Pricing
-        Assert.assertTrue(shopifyMainPage.getPricingBtn().isDisplayed());
-        shopifyMainPage.getPricingBtn().click();
+        Assert.assertTrue(shopifyMainPage.getShopifyPricingBtn().isDisplayed());
+        shopifyMainPage.getShopifyPricingBtn().click();
         //email test57tin@gmail.com
         shopifyMainPage.getPricingEmailInput().sendKeys("test57tin@gmail.com");
         Assert.assertTrue(shopifyMainPage.getPricingEmailSubmitBtn().isDisplayed());
@@ -119,7 +114,6 @@ public class TestShopify extends TestInit {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         JavascriptExecutor jse = (JavascriptExecutor) driver;
-        jse.executeScript("window.scrollBy(0,4000)");
 
         List<WebElement> imgList = shopifyMainPage.getShopifyMainPageAllImg();
 
@@ -154,29 +148,12 @@ public class TestShopify extends TestInit {
 
         JavascriptExecutor jse = (JavascriptExecutor) driver;
 
-
         List<WebElement> footerTopAList = shopifyMainPage.getShopifyFooterTopA();
+        //Accepts cookies
+        shopifyMainPage.getShopifyCookiesAcceptBtn().click();
         // element index counter
         int a = 0;
-        //TODO I wanna make an algorithm, where driver clicks href at footer, goes to this link, and then backs to https://www.shopify.com/
-        //Everything worked fine until href at xpath //div[@class='footer-top']//li[12]//a[1] because it leads to https://www.shopify.com/
-        //and thenalgorithm fucks-up
 
-        /*for (WebElement webElement : footerTopAList) {
-
-            jse.executeScript("arguments[0].scrollIntoView(true);", webElement);
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
-            Assert.assertTrue(webElement.isDisplayed());
-
-            String href = webElement.getAttribute("href");
-            a++;
-            System.out.println(a  +" "+ webElement.getAccessibleName() + " element with href " + href + " displayed");
-
-            webElement.click();
-            driver.navigate().back();
-
-
-        }*/
         for (WebElement webElement : footerTopAList) {
             jse.executeScript("arguments[0].scrollIntoView(true);", webElement);
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
@@ -184,9 +161,131 @@ public class TestShopify extends TestInit {
 
             String href = webElement.getAttribute("href");
             a++;
-            System.out.println(a  +" "+ webElement.getAccessibleName() + " element with href " + href + " displayed");
+            System.out.println(a + " " + webElement.getAccessibleName() + " element with href " + href + " displayed");
 
         }
-        System.out.println("All number of href elements Footer-Top - " + footerTopAList.size());
+        System.out.println("============================================================");
+        int i = 0;
+        List<WebElement> footerBottomAList = shopifyMainPage.getShopifyFooterBottomA();
+        for (WebElement webElement : footerBottomAList) {
+            try {
+                jse.executeScript("arguments[0].scrollIntoView(true);", webElement);
+                driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
+
+                Assert.assertTrue(webElement.isDisplayed());
+
+                String href = webElement.getAttribute("href");
+                i++;
+                System.out.println(i + " " + webElement.getAccessibleName() + " element with href " + href + " displayed");
+            } catch (AssertionError e) {
+                continue;
+                //System.out.println("Out of range");
+            }
+        }
+        System.out.println("All number of a elements Footer-Top - " + footerTopAList.size());
+        System.out.println("All number of a elements Footer-Bottom - " + i);
+
+    }
+
+    @Test
+    public void shopifyCheckLanguages() {
+        DesiredCapabilities caps = new DesiredCapabilities();
+
+        driver.manage().window().maximize();
+
+        System.out.println("================= ShopifyTest #4 =================");
+        ShopifyMainPage shopifyMainPage = new ShopifyMainPage(driver);
+        goToShopify();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+        jse.executeScript("arguments[0].scrollIntoView(true);", shopifyMainPage.getShopifyLanguageChangeBtn());
+        //Accepts cookies
+        shopifyMainPage.getShopifyCookiesAcceptBtn().click();
+        sleep(1);
+        Assert.assertTrue(shopifyMainPage.getShopifyLanguageChangeBtn().isDisplayed());
+        shopifyMainPage.getShopifyLanguageChangeBtn().click();
+
+        // element index counter
+        int a = 0;
+
+        List<WebElement> langList = shopifyMainPage.getShopifyLanguagesA();
+        for (WebElement webElement : langList) {
+            jse.executeScript("arguments[0].scrollIntoView(true);", webElement);
+            webElement.isDisplayed();
+            a++;
+            System.out.println(a + " " + webElement.getAccessibleName() + " language " + " displayed");
+        }
+        System.out.println("Amount of accesible languages is " + a);
+        System.out.println("Expected amount of accesible languages is " + langList.size());
+    }
+
+    @Test
+    public void shopifyCheckPrisings() {
+        DesiredCapabilities caps = new DesiredCapabilities();
+
+        driver.manage().window().maximize();
+
+        System.out.println("================= ShopifyTest #5 =================");
+        ShopifyMainPage shopifyMainPage = new ShopifyMainPage(driver);
+        goToShopify();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+
+        //Accepts cookies
+        shopifyMainPage.getShopifyCookiesAcceptBtn().click();
+        sleep(1);
+
+        shopifyMainPage.getShopifyPricingBtn().click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+        List<WebElement> prisingList = shopifyMainPage.getShopifyPrisingPlansPrises();
+        List<WebElement> btnList = shopifyMainPage.getShopifyPrisingTryFreeBtns();
+        List<WebElement> prisingListDiscounted = shopifyMainPage.getShopifyPrisingPlansPrisesDiscounted();
+
+        for (WebElement webElement : prisingList) {
+                webElement.getAttribute("innerText");
+                Assert.assertTrue(webElement.isDisplayed());
+                System.out.println(webElement.getAttribute("innerText"));
+
+
+        }
+        shopifyMainPage.getShopifyPrisingYearlyBtn().click();
+
+        for (WebElement webElement : prisingListDiscounted) {
+            webElement.getAttribute("innerText");
+            Assert.assertTrue(webElement.isDisplayed());
+            System.out.println(webElement.getAttribute("innerText"));
+        }
+
+
+        System.out.println("================Yearly prices===================");
+        int i = 0;
+        for (WebElement webElement : btnList) {
+            try {
+                Assert.assertTrue(webElement.isDisplayed());
+                i++;
+                System.out.println(i + " " + webElement.getAttribute("data-event-label") + " button is displayed");
+            } catch (AssertionError e) {
+                i++;
+                System.out.println(i + " " + webElement.getAttribute("data-event-label") + " button is NOT displayed because its not a wrapper, or etc");
+            }
+        }
+        shopifyMainPage.getShopifyPrisingMonthlyBtn().click();
+
+        i = 0;
+
+        System.out.println("================Monthly prices===================");
+        for (WebElement webElement : btnList) {
+            try {
+                Assert.assertTrue(webElement.isDisplayed());
+                i++;
+                System.out.println(i + " " + webElement.getAttribute("data-event-label") + " button is displayed");
+            } catch (AssertionError e) {
+                i++;
+                System.out.println(i + " " + webElement.getAttribute("data-event-label") + " button is NOT displayed because its not a wrapper,or etc");
+            }
+        }
     }
 }
