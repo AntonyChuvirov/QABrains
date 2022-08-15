@@ -49,4 +49,30 @@ public class FlagHomeElements extends BasePage {
     public WebElement getCatalogEholotBtn() {
         return $("//div[contains(text(),'Ехолоти, навігатори і аксесуари')]");
     }
+
+    public WebElement getCallBackHeader() {
+        return $("//a[@id='callback-header']");
+    }
+
+    public WebElement getInputNamber() {
+        return $("//input[@name='contact']");
+    }
+
+    public WebElement getInputName() {
+        return $("//input[@name='name']");
+    }
+
+    public WebElement getinputComment() {
+        return $("//textarea[@name='message']");
+    }
+
+    public WebElement getCallBtn() {
+        return $("//button[@class='btn']");
+    }
+
+    public WebElement getVisibilityApplicationCall() {
+        return $("//div[@name='msg']");
+    }
 }
+
+

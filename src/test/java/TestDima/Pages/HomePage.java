@@ -18,7 +18,7 @@ public class HomePage extends HomePageElements {
         getSearchBtn().click();
     }
 
-    public void inputToSearchFieldPhone() {
+    public void inputToSearchFieldRealme8pro() {
         getSearchField().sendKeys("Realme 8 pro");
 
     }
@@ -26,6 +26,10 @@ public class HomePage extends HomePageElements {
 
     public void inputToSearchFieldSmartTv(){
         getSearchField().sendKeys("SmartTv");
+    }
+
+    public void inputToSearchFieldSonyPlayStation(){
+        getSearchField().sendKeys("Sony PlayStation");
     }
 
     public void clickBtnAddedToDivision(){

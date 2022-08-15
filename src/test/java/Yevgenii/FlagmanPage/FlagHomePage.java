@@ -29,8 +29,8 @@ public class FlagHomePage extends FlagHomeElements {
     }
 
    public FlagHomePage selectLanguageBtnRu() {
-   clickLanguageBtnRu().click();
-   return this;
+        clickLanguageBtnRu().click();
+        return this;
    }
 
     public FlagHomePage selectLanguageBtnUa() {
@@ -45,6 +45,31 @@ public class FlagHomePage extends FlagHomeElements {
 
     public FlagHomePage selectCatalogEholotBtn() {
         getCatalogEholotBtn().click();
+        return this;
+    }
+
+    public FlagHomePage clickCallBackHeader() {
+        getCallBackHeader().click();
+        return this;
+    }
+
+    public FlagHomePage inputNamber() {
+        getInputNamber().sendKeys("380501112233");
+        return this;
+    }
+
+    public FlagHomePage inputName() {
+        getInputName().sendKeys("Гендольф");
+        return this;
+    }
+
+    public FlagHomePage inputComment() {
+        getinputComment().sendKeys("Передзвоніть мені вчора");
+        return this;
+    }
+
+    public FlagHomePage clickCall() {
+        getCallBtn().click();
         return this;
     }
 }
