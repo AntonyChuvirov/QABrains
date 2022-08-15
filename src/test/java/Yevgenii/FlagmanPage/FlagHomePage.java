@@ -72,4 +72,14 @@ public class FlagHomePage extends FlagHomeElements {
         getCallBtn().click();
         return this;
     }
+
+    public FlagHomePage enterFieldNewsSubscription() {
+        getFieldNewsSubscription().sendKeys("gendolfS@gmail.com");
+        return this;
+    }
+
+    public FlagHomePage clickFieldNewsSubscriptionBtn() {
+        getFieldNewsSubscriptionBtn().click();
+        return this;
+    }
 }
