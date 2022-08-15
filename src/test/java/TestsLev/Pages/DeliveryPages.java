@@ -10,6 +10,6 @@ public class DeliveryPages extends BasePage {
         super(driver);
     }
     public WebElement linkNP(){
-        return driver.findElement(By.xpath("(//a[@class='nofollow'])[1]"));
+        return $("(//a[@class='nofollow'])[1]");
     }
 }
