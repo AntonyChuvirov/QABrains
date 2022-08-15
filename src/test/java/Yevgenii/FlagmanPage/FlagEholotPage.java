@@ -38,4 +38,9 @@ public class FlagEholotPage extends FlagEholotElements {
         getEholotLackyBtn().click();
         return this;
     }
+
+    public FlagEholotPage clickManufacturerProductFilter() {
+        getManufacturerProductFilter().get(4).click();
+        return this;
+    }
 }
