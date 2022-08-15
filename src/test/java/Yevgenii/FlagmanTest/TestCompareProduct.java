@@ -11,7 +11,7 @@ public class TestCompareProduct extends TestInit {
 
     @Test
     @Description("Check whether the product is added to the product comparison")
-    public void checkCompareProduct(){
+    public void checkCompareProduct() {
         FlagHomePage flagHomePage = new FlagHomePage(driver);
         FlagEholotPage flagEholotPage = new FlagEholotPage(driver);
 

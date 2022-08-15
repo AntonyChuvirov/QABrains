@@ -10,7 +10,7 @@ public class TestChengeLanguag extends TestInit {
 
     @Test
     @Description("Check language change")
-    public void checkChangesLanguages(){
+    public void checkChangesLanguages() {
         FlagHomePage flagHomePage = new FlagHomePage(driver);
 
         flagHomePage.open();

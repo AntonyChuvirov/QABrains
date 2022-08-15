@@ -26,11 +26,15 @@ public class FlagEholotElements extends BasePage {
         return $("//span[@class='compare-count']");
     }
 
-    public WebElement getBasketBtn(){
+    public WebElement getBasketBtn() {
         return $("//i[@onmousedown='try { rrApi.addToBasket(248992) } catch(e) {}']");
     }
 
-    public WebElement getVisibleBasket(){
+    public WebElement getVisibleBasket() {
         return $("//h1[@class='popup-title']");
+    }
+
+    public WebElement getEholotLackyBtn() {
+        return $("//a[contains(text(),'Lucky FF 518')]");
     }
 }

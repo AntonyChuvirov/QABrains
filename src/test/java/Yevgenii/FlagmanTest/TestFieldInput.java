@@ -10,7 +10,7 @@ public class TestFieldInput extends TestInit {
 
     @Test
     @Description("Check the product search term")
-    public void checkFieldInput(){
+    public void checkFieldInput() {
         FlagHomePage flagHomePage = new FlagHomePage(driver);
 
         flagHomePage.open();
