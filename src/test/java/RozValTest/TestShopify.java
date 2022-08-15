@@ -275,7 +275,7 @@ public class TestShopify extends TestInit {
         shopifyMainPage.getShopifyPrisingMonthlyBtn().click();
 
         i = 0;
-
+        //M
         System.out.println("================Monthly prices===================");
         for (WebElement webElement : btnList) {
             try {

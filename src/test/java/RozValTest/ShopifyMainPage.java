@@ -146,4 +146,5 @@ public class ShopifyMainPage extends BasePage {
     public WebElement getShopifyPrisingMonthlyBtn() {
         return driver.findElement(By.xpath("//button[@data-event-label=\"monthly\"]"));
     }
+    //N
 }
