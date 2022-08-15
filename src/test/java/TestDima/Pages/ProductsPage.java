@@ -9,52 +9,52 @@ public class ProductsPage extends ProductsPageElements {
         super(driver);
     }
 
-    public void clickRealme8pro() {
-        getRealme8pro().click();
+    public void clickBtnAddAirpodsInMyList() {
+        getBtnAddAirpodsInMyList().click();
     }
 
-    public void clickSmartTv(){
-        getSmartTvNokia().click();
+    public void clickBtnDeleteAllProductInMyList() {
+        getBtnDeleteAllProductInMyList().click();
     }
 
-    public void clickBtnAddProductToMyLists(){
+    public void clickSelectedPhone() {
+        getSelectedPhone().click();
+    }
+
+    public void clickBtnAddPlayStationInMyLists() {
         getBtnAddProductToMyLists().click();
     }
 
-    public void clickBtnSaveInMyList(){
+    public void clickBtnSaveInMyList() {
         getBtnSaveInMyList().click();
     }
 
-
-
-    public void clickBtnAddToDivision() {
-        getBtnAddToDivision().click();
+    public void clickBtnAddProductInComparison() {
+        getBtnAddProductInComparison().click();
     }
 
-    public void clickBtnAddedToDivision(){
+    public void clickBtnYesInWindowWithConfirmAction(){
+        getBtnYesInWindowWithConfirmAction().click();
+    }
+
+    public void clickBtnAddedToDivision() {
         getBtnAddedToDivision().click();
     }
 
-
-    public void clickBtnCleanDivision(){
-        getBtnCleanDivision().click();
+    public void clickBtnCleanComparison() {
+        getBtnCleanComparison().click();
     }
 
-
-    public void clickContinueWorkingAfterRemove(){
-        getBtnContinueWorkingAfterRemove().click();
+    public void clickSelectedTV() {
+        getSelectedTV().click();
     }
 
-
-    public void clickBtnGoToList(){
+    public void clickBtnGoToList() {
         getBtnGoToList().click();
     }
 
-    public void clickBtnContinueAfterAddingToDivision(){
-        getBtnContinueAfterAddingToDivision().click();
+    public void clickBtnContinueAfterAddInDivision() {
+        getBtnContinueAfterAddInComparison().click();
     }
-
-
-
-    }
+}
 
