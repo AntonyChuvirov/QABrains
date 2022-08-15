@@ -1,7 +1,7 @@
-package TestsLev.Japan;
+package TestsLev.Tests;
 
 import BaseClasses.TestInit;
-import TestsLev.Japan.Pages.JapanHomePage;
+import TestsLev.Pages.JapanHomePage;
 import org.testng.annotations.Test;
 
 public class BtnAkcii extends TestInit {
