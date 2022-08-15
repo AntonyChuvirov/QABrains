@@ -11,9 +11,9 @@ public class JapanHomePage extends BasePage {
         super(driver);
     }
     public WebElement getBtnAkcii(){
-        return driver.findElement(By.xpath("//span[@class='glyphicons glyphicons-ok']"));
+        return $("//span[@class='glyphicons glyphicons-ok']");
     }
     public WebElement getSearch(){
-        return driver.findElement(By.xpath("//input[@id='search']"));
+        return $("//input[@id='search']");
     }
 }
