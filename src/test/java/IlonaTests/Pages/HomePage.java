@@ -19,6 +19,9 @@ public class HomePage extends BasePage {
     public WebElement clickTheBtnOpenMenu(){
         return driver.findElement(By.xpath("//button[@class = 'header__button ng-tns-c94-1']"));
     }
+    public WebElement clickBtnMicrophone(){
+        return driver.findElement(By.xpath("//button[@aria-label = 'Голосовой поиск']"));
+    }
 }
 
 
