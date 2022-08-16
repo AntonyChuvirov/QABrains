@@ -1,6 +1,5 @@
 package TestsAnton;
 
-import TestsOlgaVerom.pageObjects.TestInit;
 import org.testng.annotations.Test;
 
 

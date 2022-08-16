@@ -1,6 +1,5 @@
 package IlonaTests.Test;
 
-import TestsOlgaVerom.pageObjects.TestInit;
 import IlonaTests.Pages.CheckChangeLanguagePage;
 import IlonaTests.Pages.HomePage;
 import IlonaTests.Pages.LanguageBtnPage;

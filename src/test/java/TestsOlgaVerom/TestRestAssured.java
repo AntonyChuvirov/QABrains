@@ -54,5 +54,21 @@ public class TestRestAssured {
         Assert.assertTrue(gameModel.rating.equals("Universal"));
         Assert.assertTrue(gameModel.releaseDate.equals("1984-06-25"));
     }
+    @Test
+    public void checkGameMinecraft(){
+        Response response = given()
+                .baseUri("http://localhost:8080")
+                .header("Accept", "application/json")
+                .when()
+                .get("/app/videogames/7");
+
+        GameModel gameModel = response.as(GameModel.class);
+        Assert.assertTrue(gameModel.id == 7);
+        Assert.assertTrue(gameModel.reviewScore == 77);
+        Assert.assertTrue(gameModel.category.equals("Puzzle"));
+        Assert.assertTrue(gameModel.name.equals("Minecraft"));
+        Assert.assertTrue(gameModel.rating.equals("Universal"));
+        Assert.assertTrue(gameModel.releaseDate.equals("2011-12-05"));
+    }
 
 }

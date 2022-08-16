@@ -1,6 +1,5 @@
 package TestsLev;
 
-import TestsOlgaVerom.pageObjects.TestInit;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 

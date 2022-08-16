@@ -1,4 +1,4 @@
-package TestsOlgaVerom;
+package BaseClasses;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
