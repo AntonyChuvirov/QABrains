@@ -11,6 +11,6 @@ public class BtnAkcii extends TestInit {
         JapanHomePage japanHomePage = new JapanHomePage(driver);
         openUrl("https://japan-ukraine.com/ua");
         japanHomePage.getBtnAkcii().click();
-        sleep(5);
+
     }
 }

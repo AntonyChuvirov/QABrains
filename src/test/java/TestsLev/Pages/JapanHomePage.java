@@ -16,4 +16,7 @@ public class JapanHomePage extends BasePage {
     public WebElement getSearch(){
         return $("//input[@id='search']");
     }
+    public WebElement getParts(){
+        return $("(//a[@href='https://japan-ukraine.com/ua/makita-parts.php'])[1]");
+    }
 }

@@ -19,7 +19,6 @@ public class CheckBasketInput extends TestInit {
         searchPage.getSearchProduct().click();
         pageProducts.getBuy().click();
         popUpBacket.getPopUpBacket().click();
-        sleep(5);
 
 
         Assert.assertEquals(headerPage.getProductIntoBasket().getText(),"1 товар");
