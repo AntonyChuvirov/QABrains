@@ -11,4 +11,7 @@ public class HomePageStylus extends BasePage {
     public WebElement clickBtnCredit(){
         return $("//a[@title = 'Придбати в кредит']");
     }
+    public WebElement clickBtnDeliveryPayment(){
+        return $("//a[@title = 'Доставка і оплата']");
+    }
 }
