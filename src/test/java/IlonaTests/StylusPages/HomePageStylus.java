@@ -9,6 +9,6 @@ public class HomePageStylus extends BasePage {
         super(driver);
     }
     public WebElement clickBtnCredit(){
-        return $("")
+        return $("//a[@title = 'Придбати в кредит']");
     }
 }
