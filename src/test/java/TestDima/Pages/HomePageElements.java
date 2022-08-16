@@ -22,4 +22,8 @@ public class HomePageElements extends BasePage {
     public WebElement getBtnAllCatalogs(){
         return $("//a[@href='/catalog/']");
     }
+
+    public WebElement getBtnInCatalogTourismAndFishing(){
+        return $("//a[.='Туризм, Риболовля']");
+    }
 }

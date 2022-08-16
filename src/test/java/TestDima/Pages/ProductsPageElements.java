@@ -15,7 +15,7 @@ public class ProductsPageElements extends BasePage {
         return $("//img[@src='/img/tx/318/318547231_s265.jpg']");
     }
 
-       public WebElement getBtnAddProductToMyLists() {
+    public WebElement getBtnAddProductToMyLists() {
         return $("//div[@class='search-list__body']/div[3]//div[@class='bookmark-button__title text-sm link link--gray']");
     }
 
@@ -39,19 +39,19 @@ public class ProductsPageElements extends BasePage {
         return $("//div[@class='modal__title']");
     }
 
-    public WebElement getWindowWithConfirmAction(){
+    public WebElement getWindowWithConfirmAction() {
         return $("//p[contains(text(),'Видалити всі товари?')]");
     }
 
-    public WebElement getBtnYesInWindowWithConfirmAction(){
+    public WebElement getBtnYesInWindowWithConfirmAction() {
         return $("//button[.='Так']");
     }
 
-    public WebElement getBtnCancelInWindowWithConfirmAction(){
+    public WebElement getBtnCancelInWindowWithConfirmAction() {
         return $("//div[@class='fade active']//button[@class='btn-gray']");
     }
 
-    public WebElement getAddedNameProductInComparison(){
+    public WebElement getAddedNameProductInComparison() {
         return $("//div[@class='products-item__title text-sm']");
     }
 
@@ -63,7 +63,7 @@ public class ProductsPageElements extends BasePage {
         return $("//div[@class='search-list__body']/div[1]//div[@class='bookmark-button__title text-sm link link--gray']");
     }
 
-    public WebElement getBtnDeleteAllProductInMyList(){
+    public WebElement getBtnDeleteAllProductInMyList() {
         return $("//span[@class='link-action']");
     }
 
@@ -71,7 +71,7 @@ public class ProductsPageElements extends BasePage {
         return $("//span[@class='link-action']");
     }
 
-    public WebElement getWindowWithNameProductNull(){
+    public WebElement getWindowWithNameProductNull() {
         return $("//h1[.='Закладки: 0']");
     }
 
@@ -103,43 +103,126 @@ public class ProductsPageElements extends BasePage {
         return $("//div[@class='products-item__title text-sm']");
     }
 
-    public WebElement getListCatalog(){
+    public WebElement getListCatalog() {
         return $("//div[@class='catalog-list']");
     }
 
-    public WebElement getBtnSportSection(){
+    public WebElement getBtnSportSection() {
         return $("//li[.='Спорт, Активний відпочинок']");
     }
 
-    public WebElement getBtnSportCatalogList(){
+    public WebElement getBtnSportCatalogList() {
         return $("//div[@class='catalog-list']");
     }
 
-    public WebElement getBtnBicyclComputers() {
+    public WebElement getBtnBicycleComputers() {
         return $("//div[@class='viewbox scroll-smooth-to-active']//div[4]//a[.=\"Велокомп'ютери\"]");
     }
 
-    public WebElement getNewPageWithNameProducts(){
+    public WebElement getNewPageWithNameProducts() {
         return $("//h1[@class='catalog-title__main']");
     }
 
-    public WebElement getFieldWithPagesNumbers(){
+    public WebElement getFieldWithPagesNumbers() {
         return $("//div[@class='pagination feed-paginate m_b-15']");
     }
 
-    public WebElement getBtnPageNumber5(){
+    public WebElement getBtnPageNumber5() {
         return $("//div[@class='pagination__pages flex']/a[contains(.,'5')]");
     }
 
-    public WebElement getListProducts(){
+    public WebElement getListProducts() {
         return $("//div[@class='list-body__content content flex-wrap']");
     }
 
-    public WebElement getPolarV650(){
+    public WebElement getPolarV650() {
         return $("//a[contains(.,'Polar V650')]");
     }
 
-    public WebElement getPageWithNameProduct(){
-        return $("//h1[@class='title__main']");
+    public WebElement getPageWithNameProduct() {
+        return $("//h1[@class='catalog-title__main']");
+    }
+
+    public WebElement getSortingField(){
+        return $("//div[@class='sidebar-filter']/../..");
+    }
+
+    public WebElement getCheckBoxTravelBag(){
+        return $("//span[.='Дорожня сумка']");
+    }
+
+    public WebElement getCheckBoxMediumSize(){
+        return $("//div[@class='sidebar-filters__container']/div[2]//label[3]/div[@class='checkbox__checkmark checkbox__checkmark-plus']");
+    }
+
+    public WebElement getCheckBoxVolume31_50l(){
+        return $("//div[@class='sidebar-filters__container']/div[4]//label[2]/div[@class='checkbox__checkmark checkbox__checkmark-plus']");
+    }
+
+    public WebElement getBtnExpandBrandsFilters (){
+        return $("//div[@class='sidebar-filter__bottom-button']");
+    }
+    public WebElement getCheckBoxBrandArena(){
+        return $("//label[89]/div[@class='checkbox__checkmark checkbox__checkmark-plus']");
+    }
+
+    public WebElement getCheckBoxBrandPiquardo(){
+        return $("//label[84]/div[@class='checkbox__checkmark checkbox__checkmark-plus']");
+    }
+
+    public WebElement getBtnExpandOtherFilters(){
+        return $("//b[.='Розгорнути інші фільтри']");
+    }
+
+    public WebElement getFieldExpandOtherFilters(){
+        return $("//b[.='Розгорнути інші фільтри']");
+    }
+
+    public WebElement getCheckBox4Wheels(){
+        return $("//div[@class='sidebar-filters__container']/div[9]//label[2]/div[@class='checkbox__checkmark checkbox__checkmark-plus']");
+    }
+
+    public WebElement getCheckBox3__3_99Kg(){
+        return $("//div[@class='sidebar-filters__container']/div[10]//label[3]/div[@class='checkbox__checkmark checkbox__checkmark-plus']");
+    }
+
+    public WebElement getCheckBlackColor (){
+        return $("//div[@class='sidebar-filters__container']/div[11]//label[1]/div[@class='checkbox__checkmark checkbox__checkmark-plus']");
+    }
+
+    public WebElement getListCatalogProducts (){
+        return $("//div[@class='blocks-container']");
+    }
+
+    public WebElement getFieldTourismAndFishing(){
+        return $("//ul[@class='category-navigation content']/li[contains(.,'Риболовля')]");
+    }
+
+    public WebElement getPageWithTextTourismAndFishing(){
+        return $("//h1[@class='title-page flex middle-xs section-title']");
+    }
+
+    public WebElement getBtnBaggage(){
+        return $("//a[@href='/tourism/#bagazh']");
+    }
+
+    public WebElement getFieldBaggageProducts(){
+        return $("//div[@class='navigation-container m_b-10']");
+    }
+
+    public WebElement getBtnSuitcase(){
+        return $("//div[.='Валізи']");
+    }
+
+    public WebElement getCheckBoxPolycarbonateMaterial(){
+        return $("//div[12]//label[@class='filter-checklist__item checkbox flex-inline middle-xs']/div[@class='checkbox__checkmark checkbox__checkmark-plus']");
+    }
+
+    public WebElement getSortedProduct(){
+        return $("//a[@data-tracking-id='catalog-10']");
+    }
+
+    public WebElement getFieldWithProducts(){
+        return $("//img[@alt='Piquadro BV3849B2_N']");
     }
 }

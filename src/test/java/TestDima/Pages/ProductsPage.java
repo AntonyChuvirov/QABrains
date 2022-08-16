@@ -61,8 +61,8 @@ public class ProductsPage extends ProductsPageElements {
         getBtnSportSection().click();
     }
 
-    public void clickBnBicyclComputers(){
-        getBtnBicyclComputers().click();
+    public void clickBnBicycleComputers(){
+        getBtnBicycleComputers().click();
     }
 
     public void clickBtnPageNumber5(){
@@ -71,6 +71,62 @@ public class ProductsPage extends ProductsPageElements {
 
     public void clickPolarV650(){
         getPolarV650().click();
+    }
+
+    public void clickBtnBaggage(){
+        getBtnBaggage().click();
+    }
+
+    public void clickBtnSuitcase(){
+        getBtnSuitcase().click();
+    }
+
+    public void clickCheckBoxTravelBag(){
+        getCheckBoxTravelBag().click();
+    }
+
+    public void clickCheckBoxMediumSize (){
+        getCheckBoxMediumSize().click();
+    }
+
+    public void clickCheckBoxVolume31_50l(){
+        getCheckBoxVolume31_50l().click();
+    }
+
+    public void clickBtnExpandBrandsFilters (){
+        getBtnExpandBrandsFilters().click();
+    }
+
+    public void clickCheckBoxBrandArena(){
+        getCheckBoxBrandArena().click();
+    }
+
+    public void clickCheckBoxBrandPiquardo(){
+        getCheckBoxBrandPiquardo().click();
+    }
+
+    public void clickBtnExpandOtherFilters(){
+        getBtnExpandOtherFilters().click();
+    }
+
+    public void clickCheckBox4Wheels(){
+        getCheckBox4Wheels().click();
+    }
+
+    public void clickCheckBox3__3_99Kg(){
+        getCheckBox3__3_99Kg().click();
+    }
+
+    public void clickCheckBlackColor(){
+        getCheckBlackColor().click();
+    }
+
+    public void clickCheckBoxPolycarbonateMaterial(){
+        getCheckBoxPolycarbonateMaterial().click();
+    }
+
+    public void clickToSortedProduct(){
+        getSortedProduct().click();
     }
 }
 

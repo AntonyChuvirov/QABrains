@@ -21,8 +21,8 @@ public class TestSelectProductFromCatalogHotline extends TestInit {
         Assert.assertTrue(productsPage.getListCatalog().isDisplayed());
         productsPage.clickSportsSection();
         Assert.assertTrue(productsPage.getBtnSportCatalogList().isDisplayed());
-        Assert.assertTrue(productsPage.getBtnBicyclComputers().getText().contains("Велокомп'ютери"));
-        productsPage.clickBnBicyclComputers();
+        Assert.assertTrue(productsPage.getBtnBicycleComputers().getText().contains("Велокомп'ютери"));
+        productsPage.clickBnBicycleComputers();
         Assert.assertTrue(productsPage.getNewPageWithNameProducts().getText().contains("Велокомп'ютер"));
         Assert.assertTrue(productsPage.getListProducts().isDisplayed());
         Assert.assertTrue(productsPage.getFieldWithPagesNumbers().isDisplayed());
