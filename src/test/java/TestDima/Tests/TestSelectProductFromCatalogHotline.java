@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class TestSelectProductFromCatalogHotline extends TestInit {
 
     @Test
-    public void checkSignInAndSingOutInAccountHotline(){
+    public void SelectProductFromCatalogHotline(){
 
         HomePage homePage = new HomePage(driver);
 
