@@ -14,4 +14,7 @@ public class HomePageStylus extends BasePage {
     public WebElement clickBtnDeliveryPayment(){
         return $("//a[@title = 'Доставка і оплата']");
     }
+    public WebElement changeLanguageBtn(){
+        return $("//div[@id = 'header-profile']//div[@data-href = '/uk/']");
+    }
 }
