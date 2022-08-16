@@ -81,4 +81,24 @@ public class FlagHomeElements extends BasePage {
     public WebElement getFieldNewsSubscriptionBtn() {
         return $("//button[@name='subscribe']");
     }
+
+    public WebElement getLoginBtn() {
+        return $("//li/a[@name='signin']");
+    }
+
+    public WebElement getFieldInputNamber() {
+        return $("//input[@id='login-field']");
+    }
+
+    public WebElement getFieldInputPassword() {
+        return $("//input[@id='password-field']");
+    }
+
+    public WebElement getEnterBtn() {
+        return $("//button[@class='btn btn-big']");
+    }
+
+    public WebElement getVisibilityTextLogin() {
+        return $("//a[contains(text(),'Привіт')]");
+    }
 }
