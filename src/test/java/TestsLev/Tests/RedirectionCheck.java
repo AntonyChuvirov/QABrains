@@ -1,4 +1,4 @@
-Repackage TestsLev.Tests;
+package TestsLev.Tests;
 
 import BaseClasses.TestInit;
 import TestsLev.Pages.JapanHomePage;
