@@ -56,5 +56,21 @@ public class ProductsPage extends ProductsPageElements {
     public void clickBtnContinueAfterAddInDivision() {
         getBtnContinueAfterAddInComparison().click();
     }
+
+    public void clickSportsSection(){
+        getBtnSportSection().click();
+    }
+
+    public void clickBnBicyclComputers(){
+        getBtnBicyclComputers().click();
+    }
+
+    public void clickBtnPageNumber5(){
+        getBtnPageNumber5().click();
+    }
+
+    public void clickPolarV650(){
+        getPolarV650().click();
+    }
 }
 

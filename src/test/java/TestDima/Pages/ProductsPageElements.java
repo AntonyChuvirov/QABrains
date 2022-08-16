@@ -102,4 +102,44 @@ public class ProductsPageElements extends BasePage {
     public WebElement getWindowResultComparison() {
         return $("//div[@class='products-item__title text-sm']");
     }
+
+    public WebElement getListCatalog(){
+        return $("//div[@class='catalog-list']");
+    }
+
+    public WebElement getBtnSportSection(){
+        return $("//li[.='Спорт, Активний відпочинок']");
+    }
+
+    public WebElement getBtnSportCatalogList(){
+        return $("//div[@class='catalog-list']");
+    }
+
+    public WebElement getBtnBicyclComputers() {
+        return $("//div[@class='viewbox scroll-smooth-to-active']//div[4]//a[.=\"Велокомп'ютери\"]");
+    }
+
+    public WebElement getNewPageWithNameProducts(){
+        return $("//h1[@class='catalog-title__main']");
+    }
+
+    public WebElement getFieldWithPagesNumbers(){
+        return $("//div[@class='pagination feed-paginate m_b-15']");
+    }
+
+    public WebElement getBtnPageNumber5(){
+        return $("//div[@class='pagination__pages flex']/a[contains(.,'5')]");
+    }
+
+    public WebElement getListProducts(){
+        return $("//div[@class='list-body__content content flex-wrap']");
+    }
+
+    public WebElement getPolarV650(){
+        return $("//a[contains(.,'Polar V650')]");
+    }
+
+    public WebElement getPageWithNameProduct(){
+        return $("//h1[@class='title__main']");
+    }
 }

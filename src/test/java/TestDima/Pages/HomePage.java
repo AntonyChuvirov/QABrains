@@ -36,4 +36,10 @@ public class HomePage extends HomePageElements {
     public void inputInSearchFieldSonyPlayStation(){
         getSearchField().sendKeys("Sony PlayStation");
     }
+
+    public void clickBtnAllCatalogs(){
+        getBtnAllCatalogs().click();
+    }
+
+
 }
