@@ -12,4 +12,10 @@ public class PopUpWindowPage extends BasePage {
     public WebElement clickInfoBtn(){
         return driver.findElement(By.xpath("//a[contains(text(),' Довідковий центр ')]"));
     }
+    public WebElement clickAppBtnAndroid(){
+        return driver.findElement(By.xpath("//a[@aria-label = 'Додаток для Android']"));
+    }
+    public WebElement clickAppBtnIos(){
+        return driver.findElement(By.xpath("//a[@aria-label = 'Додаток для iOS']"));
+    }
 }
