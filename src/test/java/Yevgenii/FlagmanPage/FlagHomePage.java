@@ -82,4 +82,24 @@ public class FlagHomePage extends FlagHomeElements {
         getFieldNewsSubscriptionBtn().click();
         return this;
     }
+
+    public FlagHomePage clickLoginBtn() {
+        getLoginBtn().click();
+        return this;
+    }
+
+    public FlagHomePage inputFieldNamber() {
+        getFieldInputNamber().sendKeys("380501112233");
+        return this;
+    }
+
+    public FlagHomePage inputFieldPassword() {
+        getFieldInputPassword().sendKeys("0123ww111111");
+        return this;
+    }
+
+    public FlagHomePage clickEnterBtn() {
+        getEnterBtn().click();
+        return this;
+    }
 }

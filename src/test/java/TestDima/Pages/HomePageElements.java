@@ -18,4 +18,8 @@ public class HomePageElements extends BasePage {
     public WebElement getBtnSearch() {
         return $("//input[@id='doSearch']");
     }
+
+    public WebElement getBtnAllCatalogs(){
+        return $("//a[@href='/catalog/']");
+    }
 }

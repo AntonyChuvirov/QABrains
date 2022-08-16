@@ -14,7 +14,6 @@ public class CheckLinkNovaPoshta extends TestInit {
         openUrl("https://japan-ukraine.com/ua");
         headerPage.getDelivery().click();
         deliveryPages.linkNP().click();
-        sleep(10);
     }
 }
 

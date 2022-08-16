@@ -15,12 +15,11 @@ public class LinkPartners extends TestInit {
         LinksBlock linksBlock = new LinksBlock(driver);
 
         openUrl("https://japan-ukraine.com/ua/");
-        sleep(5);
+
         linksBlock.getLinkMetabo().click();
         for(String tab : driver.getWindowHandles()){
             driver.switchTo().window(tab);}
         Assert.assertEquals(driver.getCurrentUrl(), "https://metabo-ukraine.com/");
-        sleep(5);
 
     }
 }
