@@ -1,7 +1,7 @@
-package TestsLev.Tests;
+package TestsLev.Tests.Japan;
 
 import BaseClasses.TestInit;
-import TestsLev.Pages.*;
+import TestsLev.Pages.Japan.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

@@ -8,17 +8,24 @@ public class HeaderPageRB extends BasePage {
     public HeaderPageRB(WebDriver driver) {
         super(driver);
     }
-    public WebElement getSuvenir(){
+
+    public WebElement getSuvenir() {
         return $("(//a[@class='dropdown-toggle dropdown-img'])[5]");
     }
-    public WebElement getPirsing(){
+
+    public WebElement getPirsing() {
         return $("(//a[@class='dropdown-toggle dropdown-img'])[6]");
     }
-    public WebElement getTextPazl(){
+
+    public WebElement getTextPazl() {
         return $("//a[contains(text(),'Пазли')]");
     }
 
-    public WebElement getVidi(){
+    public WebElement getVidi() {
         return $("//a[contains(text(),'Види')]");
+    }
+
+    public WebElement getLinks() {
+        return $("//a[@href='https://www.instagram.com/rockwaybiz/']");
     }
 }

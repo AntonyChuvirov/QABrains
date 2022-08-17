@@ -1,9 +1,7 @@
-package TestsLev.Tests;
+package TestsLev.Tests.Japan;
 
 import BaseClasses.TestInit;
-import TestsLev.Pages.DeliveryPages;
-import TestsLev.Pages.HeaderPage;
-import TestsLev.Pages.LinksBlock;
+import TestsLev.Pages.Japan.LinksBlock;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
