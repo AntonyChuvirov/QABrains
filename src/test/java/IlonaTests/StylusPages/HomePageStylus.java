@@ -1,6 +1,7 @@
 package IlonaTests.StylusPages;
 
 import BaseClasses.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -16,5 +17,8 @@ public class HomePageStylus extends BasePage {
     }
     public WebElement changeLanguageBtn(){
         return $("//div[@id = 'header-profile']//div[@data-href = '/uk/']");
+    }
+    public WebElement getSearchField(){
+        return $("//input[@name = 'q']");
     }
 }
