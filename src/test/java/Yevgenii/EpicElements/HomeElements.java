@@ -34,4 +34,16 @@ public class HomeElements extends BasePage {
     public WebElement clickBtnScrollUp() {
         return $("//div[@class='_f8Ueuq']");
     }
+
+    public WebElement getBtnAddressStore() {
+        return $("//div[@class='header__locations']");
+    }
+
+    public WebElement getAddressStore() {
+        return $("//div[contains(text(),'Бровари')]/../../../../button");
+    }
+
+    public WebElement getVisibilityTextAddress() {
+        return $("//div[@class='header__locations-street']//span[@title='Бровари, вул. Київська, 253']");
+    }
 }

@@ -22,4 +22,14 @@ public class HomePage extends HomeElements {
         getSwitchLanguageBtn().click();
         return this;
     }
+
+    public HomePage clickBtnAddressStore() {
+        getBtnAddressStore().click();
+        return this;
+    }
+
+    public HomePage clickAddressStore() {
+        getAddressStore().click();
+        return this;
+    }
 }
