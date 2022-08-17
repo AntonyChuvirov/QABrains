@@ -177,4 +177,3 @@ public class ProductsPage extends ProductsPageElements {
         getButtonDisplayProduct2().click();
     }
 }
-

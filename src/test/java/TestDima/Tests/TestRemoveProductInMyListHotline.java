@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class TestRemoveProductInMyListHotline extends TestInit {
 
     @Test
-    public void checkRemoveProductInMyList(){
+    public void checkRemoveProductInMyListHotline(){
 
         HomePage homePage = new HomePage(driver);
 
