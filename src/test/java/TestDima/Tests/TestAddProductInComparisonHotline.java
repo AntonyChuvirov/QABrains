@@ -6,10 +6,10 @@ import TestDima.Pages.ProductsPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestAddProductInComparison extends TestInit {
+public class TestAddProductInComparisonHotline extends TestInit {
 
     @Test
-    public void checkAddProductInComparison() {
+    public void checkAddProductInComparisonHotline() {
 
         HomePage homePage = new HomePage(driver);
 

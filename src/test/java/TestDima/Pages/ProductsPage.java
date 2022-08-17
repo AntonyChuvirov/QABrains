@@ -168,5 +168,13 @@ public class ProductsPage extends ProductsPageElements {
     public void clickBtnBuy() {
         getBtnBuy().click();
     }
+
+    public void clickButtonDisplayProduct1() {
+        getButtonDisplayProduct1().click();
+    }
+
+    public void clickButtonDisplayProduct2() {
+        getButtonDisplayProduct2().click();
+    }
 }
 

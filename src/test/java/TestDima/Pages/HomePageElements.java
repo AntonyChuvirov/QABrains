@@ -26,4 +26,8 @@ public class HomePageElements extends BasePage {
     public WebElement getBtnInCatalogTourismAndFishing(){
         return $("//a[.='Туризм, Риболовля']");
     }
+
+    public WebElement getBtnElectronicCigarettes(){
+        return $("//a[@href='/adult/elektronnye-sigarety/']");
+    }
 }

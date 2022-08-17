@@ -6,10 +6,10 @@ import TestDima.Pages.ProductsPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestSearchField extends TestInit {
+public class TestSearchFieldHotline extends TestInit {
 
     @Test
-    public void checkSearchField() {
+    public void checkSearchFieldHotline() {
 
         HomePage homePage = new HomePage(driver);
 

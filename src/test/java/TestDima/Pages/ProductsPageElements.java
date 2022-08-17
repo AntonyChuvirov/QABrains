@@ -261,4 +261,12 @@ public class ProductsPageElements extends BasePage {
     public WebElement getBtnBuy(){
         return $("//a[@data-tracking-id='goprice-13']");
     }
+
+    public WebElement getButtonDisplayProduct1(){
+        return $("//div[@class=\"list-headers__switch-item icon icon--view-list\"]");
+    }
+
+    public WebElement getButtonDisplayProduct2(){
+        return $("//div[@class='list-headers__switch-item icon icon--view-module']");
+    }
 }
