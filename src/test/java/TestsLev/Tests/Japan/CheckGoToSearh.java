@@ -1,4 +1,4 @@
-package TestsLev.Tests;
+package TestsLev.Tests.Japan;
 
 import BaseClasses.TestInit;
 import io.github.bonigarcia.wdm.WebDriverManager;

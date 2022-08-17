@@ -1,7 +1,7 @@
-package TestsLev.Tests;
+package TestsLev.Tests.Japan;
 
 import BaseClasses.TestInit;
-import TestsLev.Pages.HeaderPage;
+import TestsLev.Pages.Japan.HeaderPage;
 import org.testng.annotations.Test;
 
 public class CallBack extends TestInit {
