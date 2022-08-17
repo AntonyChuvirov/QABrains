@@ -1,8 +1,8 @@
 package Yevgenii.EpicTests;
 
 import BaseClasses.TestInit;
-import Yevgenii.EpikElements.HomeElements;
-import Yevgenii.EpikPage.HomePage;
+import Yevgenii.EpicElements.HomeElements;
+import Yevgenii.EpicPage.HomePage;
 import jdk.jfr.Description;
 import org.testng.Assert;
 import org.testng.annotations.Test;

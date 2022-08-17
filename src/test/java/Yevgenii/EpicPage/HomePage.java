@@ -1,6 +1,6 @@
-package Yevgenii.EpikPage;
+package Yevgenii.EpicPage;
 
-import Yevgenii.EpikElements.HomeElements;
+import Yevgenii.EpicElements.HomeElements;
 import org.openqa.selenium.WebDriver;
 
 public class HomePage extends HomeElements {

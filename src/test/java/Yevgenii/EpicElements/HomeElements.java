@@ -1,4 +1,4 @@
-package Yevgenii.EpikElements;
+package Yevgenii.EpicElements;
 
 import BaseClasses.BasePage;
 import org.openqa.selenium.WebDriver;
@@ -29,5 +29,9 @@ public class HomeElements extends BasePage {
 
     public WebElement getVisibilityTextBtnUa() {
         return $("//div[contains(text(),'Каталог товарів')]");
+    }
+
+    public WebElement clickBtnScrollUp() {
+        return $("//div[@class='_f8Ueuq']");
     }
 }
