@@ -6,10 +6,10 @@ import TestDima.Pages.ProductsPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestProductSortingByPrice extends TestInit {
+public class TestProductSortingByPriceHotline extends TestInit {
 
     @Test
-    public void checkProductSortingByPrice(){
+    public void checkProductSortingByPriceHotline(){
 
         HomePage homePage = new HomePage(driver);
 
@@ -30,13 +30,11 @@ public class TestProductSortingByPrice extends TestInit {
         productsPage.clearFieldInputPriceFrom();
         productsPage.inputInFieldInputPriceFrom_2000();
         Assert.assertTrue(productsPage.getFieldInputPriceFrom().isDisplayed());
-        sleep(2);
         productsPage.clearFieldInputPriceTo();
         productsPage.inputInFieldInputPriceTo_5000();
         Assert.assertTrue(productsPage.getFieldInputPriceTo().isDisplayed());
         productsPage.clickBtnOk();
         Assert.assertTrue(productsPage.getFieldWithSortedProducts().isDisplayed());
-        sleep(2);
         productsPage.clickToAsicsGel_GelExcite8();
         Assert.assertTrue(productsPage.getAsicsGel_GelExcite8().getText().contains("Asics GEL-EXCITE 8"));
         Assert.assertTrue(productsPage.getBtnBuy().isDisplayed());

@@ -44,4 +44,12 @@ public class HomePage extends HomePageElements {
     public void clickBtnInCatalogTourismAndFishing(){
         getBtnInCatalogTourismAndFishing().click();
     }
+
+    public void clickBtnUkrainianLanguage(){
+        getBtnUkrainianLanguage().click();
+    }
+
+    public void clickBtnRussianLanguage(){
+        getBtnRussianLanguage().click();
+    }
 }

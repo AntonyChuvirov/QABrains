@@ -169,4 +169,3 @@ public class ProductsPage extends ProductsPageElements {
         getBtnBuy().click();
     }
 }
-

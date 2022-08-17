@@ -26,4 +26,16 @@ public class HomePageElements extends BasePage {
     public WebElement getBtnInCatalogTourismAndFishing(){
         return $("//a[.='Туризм, Риболовля']");
     }
+
+    public WebElement getBtnUkrainianLanguage(){
+        return $("//div[1]/header/div[1]/div/div/div[1]/div[3]/div/span[2]");
+    }
+
+    public WebElement getBtnRussianLanguage(){
+        return $("//div[1]/header/div[1]/div/div/div[1]/div[3]/div/span[1]");
+    }
+
+    public WebElement getBtnComparison(){
+        return $("//div[@class='item-compare']");
+    }
 }
