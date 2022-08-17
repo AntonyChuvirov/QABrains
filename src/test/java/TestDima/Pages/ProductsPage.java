@@ -33,7 +33,7 @@ public class ProductsPage extends ProductsPageElements {
         getBtnAddProductInComparison().click();
     }
 
-    public void clickBtnYesInWindowWithConfirmAction(){
+    public void clickBtnYesInWindowWithConfirmAction() {
         getBtnYesInWindowWithConfirmAction().click();
     }
 
@@ -57,76 +57,116 @@ public class ProductsPage extends ProductsPageElements {
         getBtnContinueAfterAddInComparison().click();
     }
 
-    public void clickSportsSection(){
+    public void clickSportsSection() {
         getBtnSportSection().click();
     }
 
-    public void clickBnBicycleComputers(){
+    public void clickBnBicycleComputers() {
         getBtnBicycleComputers().click();
     }
 
-    public void clickBtnPageNumber5(){
+    public void clickBtnPageNumber5() {
         getBtnPageNumber5().click();
     }
 
-    public void clickPolarV650(){
+    public void clickPolarV650() {
         getPolarV650().click();
     }
 
-    public void clickBtnBaggage(){
+    public void clickBtnBaggage() {
         getBtnBaggage().click();
     }
 
-    public void clickBtnSuitcase(){
+    public void clickBtnSuitcase() {
         getBtnSuitcase().click();
     }
 
-    public void clickCheckBoxTravelBag(){
+    public void clickCheckBoxTravelBag() {
         getCheckBoxTravelBag().click();
     }
 
-    public void clickCheckBoxMediumSize (){
+    public void clickCheckBoxMediumSize() {
         getCheckBoxMediumSize().click();
     }
 
-    public void clickCheckBoxVolume31_50l(){
+    public void clickCheckBoxVolume31_50l() {
         getCheckBoxVolume31_50l().click();
     }
 
-    public void clickBtnExpandBrandsFilters (){
+    public void clickBtnExpandBrandsFilters() {
         getBtnExpandBrandsFilters().click();
     }
 
-    public void clickCheckBoxBrandArena(){
-        getCheckBoxBrandArena().click();
+    public void clickCheckBoxBrandCheckBoxBrandAmericanTourister() {
+        getCheckBoxBrandAmericanTourister().click();
     }
 
-    public void clickCheckBoxBrandPiquardo(){
+    public void clickCheckBoxBrandPiquardo() {
         getCheckBoxBrandPiquardo().click();
     }
 
-    public void clickBtnExpandOtherFilters(){
+    public void clickBtnExpandOtherFilters() {
         getBtnExpandOtherFilters().click();
     }
 
-    public void clickCheckBox4Wheels(){
+    public void clickCheckBox4Wheels() {
         getCheckBox4Wheels().click();
     }
 
-    public void clickCheckBox3__3_99Kg(){
+    public void clickCheckBox3__3_99Kg() {
         getCheckBox3__3_99Kg().click();
     }
 
-    public void clickCheckBlackColor(){
+    public void clickCheckBlackColor() {
         getCheckBlackColor().click();
     }
 
-    public void clickCheckBoxPolycarbonateMaterial(){
+    public void clickCheckBoxPolycarbonateMaterial() {
         getCheckBoxPolycarbonateMaterial().click();
     }
 
-    public void clickToSortedProduct(){
+    public void clickToSortedProduct() {
         getSortedProduct().click();
+    }
+
+    public void clickBtnSneakers() {
+        getBtnSneakers().click();
+    }
+
+    public void clickCheckBoxForMan() {
+        getCheckBoxForMan().click();
+    }
+
+    public void clickCheckBoxSize42() {
+        getCheckBoxSize42().click();
+    }
+
+    public void clearFieldInputPriceFrom() {
+        getFieldInputPriceFrom().clear();
+    }
+
+    public void inputInFieldInputPriceFrom_2000() {
+        getFieldInputPriceFrom().sendKeys("2000");
+    }
+
+    public void clearFieldInputPriceTo() {
+        getFieldInputPriceTo().clear();
+    }
+
+    public void inputInFieldInputPriceTo_5000() {
+        getFieldInputPriceTo().sendKeys("5000");
+    }
+
+    public void clickBtnOk() {
+        getBtnOk().click();
+    }
+
+    public void clickToAsicsGel_GelExcite8() {
+        getAsicsGel_GelExcite8().click();
+    }
+
+    public void clickBtnBuy() {
+        getBtnBuy().click();
     }
 }
 

@@ -139,8 +139,12 @@ public class ProductsPageElements extends BasePage {
         return $("//a[contains(.,'Polar V650')]");
     }
 
-    public WebElement getPageWithNameProduct() {
+    public WebElement getPageWithNameProduct1() {
         return $("//h1[@class='catalog-title__main']");
+    }
+
+    public WebElement getPageWithNameProduct2() {
+        return $("//h1[@class='title__main']");
     }
 
     public WebElement getSortingField(){
@@ -162,12 +166,12 @@ public class ProductsPageElements extends BasePage {
     public WebElement getBtnExpandBrandsFilters (){
         return $("//div[@class='sidebar-filter__bottom-button']");
     }
-    public WebElement getCheckBoxBrandArena(){
-        return $("//label[89]/div[@class='checkbox__checkmark checkbox__checkmark-plus']");
+    public WebElement getCheckBoxBrandAmericanTourister(){
+        return $("//div[@class='sidebar-filters__container']/div[5]//div[2]/label[5]/div[@class='checkbox__checkmark checkbox__checkmark-plus']");
     }
 
     public WebElement getCheckBoxBrandPiquardo(){
-        return $("//label[84]/div[@class='checkbox__checkmark checkbox__checkmark-plus']");
+        return $("//label[90]/div[@class='checkbox__checkmark checkbox__checkmark-plus']");
     }
 
     public WebElement getBtnExpandOtherFilters(){
@@ -219,10 +223,42 @@ public class ProductsPageElements extends BasePage {
     }
 
     public WebElement getSortedProduct(){
-        return $("//a[@data-tracking-id='catalog-10']");
+        return $("//img[@alt='Piquadro BV3849B2_N']");
     }
 
-    public WebElement getFieldWithProducts(){
-        return $("//img[@alt='Piquadro BV3849B2_N']");
+    public WebElement getFieldWithSortedProducts(){
+        return $("//div[@class='list-body']");
+    }
+
+    public WebElement getBtnSneakers(){
+        return $("//div[@class='catalog-list']//div[6]//a[.='Кросівки']");
+    }
+
+    public WebElement getCheckBoxForMan(){
+        return $("//div[@class='sidebar-filters__container']/div[2]//label[1]/div[@class='checkbox__checkmark checkbox__checkmark-plus']");
+    }
+
+    public WebElement getCheckBoxSize42(){
+        return $("//div[@class='sidebar-filters__container']//label[8]/div[contains(.,'42')]");
+    }
+
+    public WebElement getFieldInputPriceFrom(){
+        return $("//div[3]/div[2]/div[1]/div/div[2]/div[1]/div[10]/div/div[2]/div/div[1]/input[1]");
+    }
+
+    public WebElement getFieldInputPriceTo(){
+        return $("//div[3]/div[2]/div[1]/div/div[2]/div[1]/div[10]/div/div[2]/div/div[1]/input[2]");
+    }
+
+    public WebElement getBtnOk(){
+        return $("//button[@class='filter-price__range-btn btn btn--graphite']");
+    }
+
+    public WebElement getAsicsGel_GelExcite8(){
+        return $("//a[contains(.,'Asics GEL-EXCITE 8 (2021) 42.0 Синій')]/..");
+    }
+
+    public WebElement getBtnBuy(){
+        return $("//a[@data-tracking-id='goprice-13']");
     }
 }

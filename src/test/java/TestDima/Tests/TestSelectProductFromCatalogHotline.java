@@ -29,7 +29,7 @@ public class TestSelectProductFromCatalogHotline extends TestInit {
         productsPage.clickBtnPageNumber5();
         Assert.assertTrue(productsPage.getListProducts().isDisplayed());
         productsPage.clickPolarV650();
-        Assert.assertTrue(productsPage.getPageWithNameProduct().getText().contains("Polar V650"));
+        Assert.assertTrue(productsPage.getPageWithNameProduct1().getText().contains("Polar V650"));
     }
 }
 
