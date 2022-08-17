@@ -21,4 +21,7 @@ public class HomePageStylus extends BasePage {
     public WebElement getSearchField(){
         return $("//input[@name = 'q']");
     }
+    public WebElement clickBtnContacts(){
+        return $("//div[@class = 'header-top']//a[@title = 'Контакти']");
+    }
 }
