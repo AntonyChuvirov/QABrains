@@ -18,4 +18,16 @@ public class HomeElements extends BasePage {
     public List<WebElement> getVisibilityProduct() {
         return waitVisibilityOfAllElements("//div[contains(@class,'columns product-Wrap card-wrapper')]//b[contains(text(),'Лом')]");
     }
+
+    public WebElement getSwitchLanguageBtn() {
+        return $("//span[@class='switch__lever']");
+    }
+
+    public WebElement getVisibilityTextBtnRu() {
+        return $("//div[contains(text(),'Каталог товаров')]");
+    }
+
+    public WebElement getVisibilityTextBtnUa() {
+        return $("//div[contains(text(),'Каталог товарів')]");
+    }
 }
