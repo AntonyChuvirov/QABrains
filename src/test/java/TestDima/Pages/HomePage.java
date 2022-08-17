@@ -45,7 +45,15 @@ public class HomePage extends HomePageElements {
         getBtnInCatalogTourismAndFishing().click();
     }
 
-    public void clickBtnElectronicCigarettes(){
+    public void clickBtnElectronicCigarettes() {
         getBtnElectronicCigarettes().click();
+    }
+
+    public void clickBtnUkrainianLanguage(){
+        getBtnUkrainianLanguage().click();
+    }
+
+    public void clickBtnRussianLanguage(){
+        getBtnRussianLanguage().click();
     }
 }
