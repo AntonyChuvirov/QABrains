@@ -17,6 +17,7 @@ public class TestFieldSearch extends TestInit {
 
         homePage.open();
         homePage.inputSearchField();
+
         Assert.assertTrue(homeElements.getVisibilityProduct().size() > 10);
     }
 }
