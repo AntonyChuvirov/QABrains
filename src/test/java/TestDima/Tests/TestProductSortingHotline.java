@@ -26,13 +26,13 @@ public class TestProductSortingHotline extends TestInit {
         Assert.assertTrue(productsPage.getFieldBaggageProducts().isDisplayed());
         Assert.assertTrue(productsPage.getBtnSuitcase().getText().contains("Валізи"));
         productsPage.clickBtnSuitcase();
-        Assert.assertTrue(productsPage.getPageWithNameProduct().getText().contains("Валізу"));
+        Assert.assertTrue(productsPage.getPageWithNameProduct1().getText().contains("Валізу"));
         Assert.assertTrue(productsPage.getSortingField().isDisplayed());
         productsPage.clickCheckBoxTravelBag();
         productsPage.clickCheckBoxMediumSize();
         productsPage.clickCheckBoxVolume31_50l();
         productsPage.clickBtnExpandBrandsFilters();
-        productsPage.clickCheckBoxBrandArena();
+        productsPage.clickCheckBoxBrandCheckBoxBrandAmericanTourister();
         productsPage.clickCheckBoxBrandPiquardo();
         Assert.assertTrue(productsPage.getFieldExpandOtherFilters().isDisplayed());
         productsPage.clickBtnExpandOtherFilters();
@@ -40,7 +40,7 @@ public class TestProductSortingHotline extends TestInit {
         productsPage.clickCheckBox3__3_99Kg();
         productsPage.clickCheckBlackColor();
         productsPage.clickCheckBoxPolycarbonateMaterial();
-        Assert.assertTrue(productsPage.getFieldWithProducts().isDisplayed());
+        Assert.assertTrue(productsPage.getFieldWithSortedProducts().isDisplayed());
         productsPage.clickToSortedProduct();
     }
 }
