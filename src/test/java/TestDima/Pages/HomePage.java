@@ -44,4 +44,8 @@ public class HomePage extends HomePageElements {
     public void clickBtnInCatalogTourismAndFishing(){
         getBtnInCatalogTourismAndFishing().click();
     }
+
+    public void clickBtnElectronicCigarettes(){
+        getBtnElectronicCigarettes().click();
+    }
 }
