@@ -17,4 +17,9 @@ public class HomePage extends HomeElements {
         getSearchField().sendKeys("лом\n");
         return this;
     }
+
+    public HomePage clickSwitchLanguageBtn() {
+        getSwitchLanguageBtn().click();
+        return this;
+    }
 }
