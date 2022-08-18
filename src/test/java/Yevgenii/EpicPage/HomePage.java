@@ -32,4 +32,14 @@ public class HomePage extends HomeElements {
         getAddressStore().click();
         return this;
     }
+
+    public HomePage clickMenuProductBtn() {
+        getMenuProductBtn().click();
+        return this;
+    }
+
+    public HomePage clickSectionProductContraceptives() {
+        getSectionProductContraceptives().click();
+        return this;
+    }
 }
