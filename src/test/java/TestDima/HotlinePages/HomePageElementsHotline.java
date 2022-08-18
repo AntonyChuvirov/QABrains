@@ -1,13 +1,13 @@
-package TestDima.Pages;
+package TestDima.HotlinePages;
 
 import BaseClasses.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class HomePageElements extends BasePage {
+public class HomePageElementsHotline extends BasePage {
 
 
-    public HomePageElements(WebDriver driver) {
+    public HomePageElementsHotline(WebDriver driver) {
         super(driver);
     }
 

@@ -1,13 +1,13 @@
-package TestDima.Pages;
+package TestDima.HotlinePages;
 
 import BaseClasses.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class ProductsPageElements extends BasePage {
+public class ProductsPageElementsHotline extends BasePage {
 
 
-    public ProductsPageElements(WebDriver driver) {
+    public ProductsPageElementsHotline(WebDriver driver) {
         super(driver);
     }
 
@@ -255,7 +255,7 @@ public class ProductsPageElements extends BasePage {
     }
 
     public WebElement getAsicsGel_GelExcite8(){
-        return $("//a[contains(.,'Asics GEL-EXCITE 8 (2021) 42.0 Синій')]/..");
+        return $("//a[contains(text(),'Asics GEL-EXCITE 8 (2021) 42.0 Синій')]/.");
     }
 
     public WebElement getBtnBuy(){
