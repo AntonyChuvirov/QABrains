@@ -19,7 +19,6 @@ public class BascketCheckInput extends TestInit {
         openUrl("https://rockway.biz/ua/");
         rockBizHomePage.getInput().sendKeys("Футболка");
         rockBizHomePage.getBtnSearch().click();
-        sleep(3);
         searchProductPage.getChooseProduct().click();
         productPage.getSize().click();
         productPage.buy().click();
