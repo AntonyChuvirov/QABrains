@@ -24,4 +24,7 @@ public class HomePageStylus extends BasePage {
     public WebElement clickBtnContacts(){
         return $("//div[@class = 'header-top']//a[@title = 'Контакти']");
     }
+    public WebElement clickOnBtnCatalog(){
+        return $("//button[@id = 'header_catalog']");
+    }
 }
