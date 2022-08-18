@@ -13,10 +13,6 @@ public class HomePagePromUa extends HomePageElementsPromUa {
         driver.get("https://prom.ua/ua/");
     }
 
-    public void inputInSearchFieldXiaomiRedmiNote11(){
-        getSearchField().sendKeys("Xiaomi Redmi Note 11");
-    }
-
     public void clickSearchBtn(){
         getBtnSearch().click();
     }
