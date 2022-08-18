@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class ShopifyMainPage extends BasePage {
 
     public ShopifyMainPage(WebDriver driver) {
@@ -12,7 +14,7 @@ public class ShopifyMainPage extends BasePage {
     }
 
 
-    //test 1 - header elements
+    //test 1 - elements shopifyCheckHeader ===================================================================================
 
     public WebElement getLogoShopify() {
         return driver.findElement(By.xpath("//a[@data-ga-action='Logo']"));
@@ -76,7 +78,7 @@ public class ShopifyMainPage extends BasePage {
         return driver.findElement(By.xpath("//strong[normalize-space()='50%']"));
     }
 
-    public WebElement getPricingBtn() {
+    public WebElement getShopifyPricingBtn() {
         return driver.findElement(By.xpath("//a[@data-ga-action=\"Pricing\"][1]"));
     }
 
@@ -103,4 +105,46 @@ public class ShopifyMainPage extends BasePage {
     public WebElement getLearnMerchantBlogShopifyTodayLabel() {
         return driver.findElement(By.xpath("//h1[contains(text(), 'with Shopify today')]"));
     }
+
+    // 2 test elements shopifyMainPageCheckImg ===================================================================================
+    public List<WebElement> getShopifyMainPageAllImg() {
+        return driver.findElements(By.xpath("//img"));//[contains(@class, 'lazyloaded')]
+    }
+
+    //3 test elements shopifyCheckFooterTopA ===================================================================================
+    public List<WebElement> getShopifyFooterTopA() {
+        return driver.findElements(By.xpath("//div[contains(@class, 'footer-top')]//li//a"));
+    }
+    public List<WebElement> getShopifyFooterBottomA() {
+        return driver.findElements(By.xpath("//div[@class='footer-bottom']//a"));
+    }
+
+    //4 test elements LanguagesTest ===================================================================================
+    public List<WebElement> getShopifyLanguagesA() {
+        return driver.findElements(By.xpath("//ul[@aria-labelledby=\"country-select-heading\"]//a"));
+    }
+    public WebElement getShopifyLanguageChangeBtn() {
+        return driver.findElement(By.xpath("//button[@data-ga-label=\"CountrySelector\"]"));
+    }
+    public WebElement getShopifyCookiesAcceptBtn() {
+        return driver.findElement(By.xpath("//div[contains(@class, 'cookies-notice__inner')]//button[contains(text(), 'OK')]"));
+    }
+    //5 test prisingTest================================================================================================
+
+    public List<WebElement> getShopifyPrisingPlansPrises() {
+        return driver.findElements(By.xpath("//div[contains(@class,'pricing-redesign__pricing-card ')]//div[contains(@class,'pricing-content__monthly')]//span[contains(@class,'price heading--1')]"));
+    }
+    public List<WebElement> getShopifyPrisingPlansPrisesDiscounted() {
+        return driver.findElements(By.xpath("//div[contains(@class,'pricing-redesign__pricing-card ')]//div[contains(@class,'pricing-content__yearly')]//span[contains(@class,'price heading--1')]"));
+    }
+    public List<WebElement> getShopifyPrisingTryFreeBtns() {
+        return driver.findElements(By.xpath("//div[contains(@class, 'pricing-redesign__cards-container')]//button[contains(@data-event-category, \"pricing card\")]"));
+    }
+    public WebElement getShopifyPrisingYearlyBtn() {
+        return driver.findElement(By.xpath("//button[@data-event-label=\"yearly\"]"));
+    }
+    public WebElement getShopifyPrisingMonthlyBtn() {
+        return driver.findElement(By.xpath("//button[@data-event-label=\"monthly\"]"));
+    }
+    //N
 }
