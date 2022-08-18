@@ -1,11 +1,11 @@
-package TestDima.Pages;
+package TestDima.HotlinePages;
 
 import org.openqa.selenium.WebDriver;
 
-public class ProductsPage extends ProductsPageElements {
+public class ProductsPageHotlineHotline extends ProductsPageElementsHotline {
 
 
-    public ProductsPage(WebDriver driver) {
+    public ProductsPageHotlineHotline(WebDriver driver) {
         super(driver);
     }
 
