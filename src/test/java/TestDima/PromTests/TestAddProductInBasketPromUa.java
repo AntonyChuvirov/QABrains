@@ -3,12 +3,13 @@ package TestDima.PromTests;
 import BaseClasses.TestInit;
 import TestDima.PromPages.HomePagePromUa;
 import TestDima.PromPages.ProductsPagePromUa;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestAddProductInBasketPromUa extends TestInit {
 
     @Test
-    public void checkAddProductIngit statusBasketPromUa(){
+    public void checkAddProductBasketPromUa(){
 
         HomePagePromUa homePagePromUa = new HomePagePromUa(driver);
 
@@ -18,7 +19,15 @@ public class TestAddProductInBasketPromUa extends TestInit {
 
         ProductsPagePromUa productsPagePromUa = new ProductsPagePromUa(driver);
 
-        productsPagePromUa.getPageWithNameProduct().getText().contains("Кава");
-        productsPagePromUa.getFieldWithProduct().isDisplayed();
+        Assert.assertTrue(productsPagePromUa.getPageWithNameProduct().getText().contains("Кава"));
+        Assert.assertTrue(productsPagePromUa.getFieldWithProduct().isDisplayed());
+        productsPagePromUa.clickJACOBSMONARCH();
+        Assert.assertTrue(productsPagePromUa.getBtnBuyProduct().isDisplayed());
+        productsPagePromUa.clickBtnBuyProduct();
+        Assert.assertTrue(productsPagePromUa.getWindowWithNameBasket().getText().contains("Кошик"));
+        Assert.assertTrue(productsPagePromUa.getNameProductInWindowBasket().getText().contains("JACOBS"));
+        Assert.assertTrue(productsPagePromUa.getBtnBuyProductInBasket().isDisplayed());
+        productsPagePromUa.clickBtnBuyProductInBasket();
+        Assert.assertTrue(productsPagePromUa.getPagePlacingAnOrder().isDisplayed());
     }
 }
