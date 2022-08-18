@@ -6,10 +6,10 @@ import TestDima.PromPages.ProductsPagePromUa;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestAddProductInBasketPromUa extends TestInit {
+public class TestAddProductToBasketPromUa extends TestInit {
 
     @Test
-    public void checkAddProductBasketPromUa(){
+    public void checkAddProductToBasketPromUa(){
 
         HomePagePromUa homePagePromUa = new HomePagePromUa(driver);
 
