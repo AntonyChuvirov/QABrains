@@ -27,4 +27,7 @@ public class RockBizHomePage extends BasePage {
     public WebElement getBtnRgstr(){
         return $("//a[text()='Реєстрація']");
     }
+    public WebElement getAutorization(){
+        return $("//a[text()='Авторизація']");
+    }
 }
