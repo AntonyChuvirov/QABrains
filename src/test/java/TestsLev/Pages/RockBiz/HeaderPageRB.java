@@ -28,4 +28,15 @@ public class HeaderPageRB extends BasePage {
     public WebElement getLinks() {
         return $("//a[@href='https://www.instagram.com/rockwaybiz/']");
     }
+
+    public WebElement getLenguageBtn(){
+        return $("//div[@id='form-language']");
+    }
+
+    public WebElement getRusLenguage(){
+        return $("(//button[@class='btn btn-link btn-block language-select'])[2]");
+    }
+    public WebElement getUaLenguage(){
+        return $("(//button[@class='btn btn-link btn-block language-select'])[1]");
+    }
 }

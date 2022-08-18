@@ -14,4 +14,11 @@ public class RockBizHomePage extends BasePage {
     public WebElement getBtnSearch (){
         return $("//i[@class='fa fa-search']");
     }
+
+    public WebElement otziviRus(){
+        return $("//a[text()='Отзывы']");
+    }
+    public WebElement vidguki(){
+        return $("//a[text()='Відгуки']");
+    }
 }
