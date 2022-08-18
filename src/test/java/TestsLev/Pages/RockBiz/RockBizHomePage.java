@@ -21,4 +21,10 @@ public class RockBizHomePage extends BasePage {
     public WebElement vidguki(){
         return $("//a[text()='Відгуки']");
     }
+    public WebElement getlabelUser(){
+        return $("//li[@class='dropdown col-sm-4']");
+    }
+    public WebElement getBtnRgstr(){
+        return $("//a[text()='Реєстрація']");
+    }
 }
