@@ -46,4 +46,24 @@ public class HomeElements extends BasePage {
     public WebElement getVisibilityTextAddress() {
         return $("//div[@class='header__locations-street']//span[@title='Бровари, вул. Київська, 253']");
     }
+
+    public WebElement getMenuProductBtn() {
+        return $("//div[@class='header__menu-opener-button-text']");
+    }
+
+    public WebElement selectSectionProductContraceptives() {
+        return $("//a[contains(text(),'Краса та здоров')]");
+    }
+
+    public WebElement getSectionProductContraceptives() {
+        return $("//a[@class='catalog-menu__level-2'][@title='Засоби контрацепції']");
+    }
+
+    public WebElement closePopupWindow() {
+        return $("//div[@class='_lf1rdL']");
+    }
+
+    public WebElement getVisibilityTextContraceptives() {
+        return $("//h1['Засоби контрацепції']");
+    }
 }
