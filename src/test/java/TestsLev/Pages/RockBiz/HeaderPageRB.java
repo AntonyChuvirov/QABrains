@@ -39,4 +39,9 @@ public class HeaderPageRB extends BasePage {
     public WebElement getUaLenguage(){
         return $("(//button[@class='btn btn-link btn-block language-select'])[1]");
     }
+
+    public WebElement getVzuttya(){
+        return $("(//a[@class='dropdown-toggle dropdown-img'])[3]");
+    }
 }
+
