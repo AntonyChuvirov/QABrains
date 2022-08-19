@@ -16,11 +16,8 @@ public class CheckFiltr extends TestInit {
 
         openUrl("https://rockway.biz/ua/");
         rockBizHomePage.getbtnPirsing().click();
-        sleep(2);
         productPage.filtrWhite().click();
-        sleep(2);
         productPage.btnShowResult().click();
-        sleep(2);
 
         Assert.assertEquals(searchProductPage.getResultWhite().getText(),"Пірсинг Колір Білий");
 
