@@ -30,4 +30,7 @@ public class RockBizHomePage extends BasePage {
     public WebElement getAutorization(){
         return $("//a[text()='Авторизація']");
     }
+    public WebElement getbtnPirsing(){
+        return $("(//a[@class='dropdown-toggle dropdown-img'])[6]");
+    }
 }

@@ -11,4 +11,7 @@ public class SearchProductPage extends BasePage {
     public WebElement getChooseProduct(){
         return $("(//a[@href='https://rockway.biz/ua/futbolka-eskimo-callboy-king-of-the-rabbits'])[2]");
     }
+    public WebElement getResultWhite(){
+        return $("//h1");
+    }
 }
