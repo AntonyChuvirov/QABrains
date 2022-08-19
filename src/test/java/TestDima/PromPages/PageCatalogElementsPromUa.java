@@ -14,58 +14,58 @@ public class PageCatalogElementsPromUa extends BasePage {
     }
 
     public WebElement getFieldGarden(){
-        return $("//a[@href='/ua/Sad'][text()='Сад']");
+        return $("//a[.='Сад']");
     }
 
-    public WebElement getFieldModernHouse(){
-        return $("//a[@href='/ua/Sovremennyj-dom'][text()='Сучасний будинок']");
+    public WebElement getFieldDishes(){
+        return $("//a[.='Посуд']");
     }
 
     public WebElement getBtnTechnicsAndElectronics(){
-        return $("//a[.='Техніка та електроніка']//span[@style='vertical-align: middle;']");
+        return $("//div[@class='M3v0L sMgZR BXDW- DUxBc IM66u yVZ7H']//span[@class='_3Trjq']/span[.='Техніка та електроніка']");
     }
 
     public WebElement getFieldHouseholdAppliances(){
-        return $("//a[@href='/ua/Bytovaya-tehnika'][text()='Побутова техніка']");
+        return $("//a[.='Побутова техніка']");
     }
 
-    public WebElement getFieldTV_AndVideoEquipment(){
-        return $("//a[@href='/ua/Audio-video-foto-tehnika'][text()='TV та відеотехніка']");
+    public WebElement getFieldAutomotiveElectronics(){
+        return $("//a[.='Автомобільна електроніка']");
     }
 
     public WebElement getBtnAccessoriesAndDecorations(){
-        return $("//a[.='Аксесуари та прикраси']//span[@style='vertical-align: middle;']");
+        return $("//div[@class='M3v0L sMgZR BXDW- DUxBc IM66u yVZ7H']//a[.='Аксесуари та прикраси']");
     }
 
     public WebElement getFieldJewelry(){
-        return $("//a[@href='/ua/Yuvelirnye-izdeliya'][text()='Ювелірні вироби']");
+        return $("//a[.='Ювелірні вироби']");
     }
 
     public WebElement geFieldHaberdasheryAndAccessories(){
-        return $("//a[@href='/ua/Galantereya-ukrasheniya-yuvelirnye-izdeliya'][text()='Галантерея та аксесуари']");
+        return $("//a[.='Галантерея та аксесуари']");
     }
 
     public WebElement getBtnMedicinesAndMedicalProducts(){
-        return $("//a[.='Медикаменти та медичні товари']//span[@style='vertical-align: middle;']");
+        return $("//div[@class='M3v0L sMgZR BXDW- DUxBc IM66u yVZ7H']//a[.='Медикаменти та медичні товари']");
     }
 
     public WebElement getFieldNaturalDrugs(){
-        return $("//a[@href='/ua/Naturalnye-preparaty'][text()='Натуральні препарати']");
+        return $("//a[.='Натуральні препарати']");
     }
 
     public WebElement getFieldMedicalProducts(){
-        return $("//a[@href='/ua/Tovary-medicinskogo-naznacheniya'][text()='Товари медичного призначення']");
+        return $("//a[.='Товари медичного призначення']");
     }
 
     public WebElement getBtnAutoMoto(){
-        return $("//a[.='Авто-, мото']//span[@style='vertical-align: middle;']");
+        return $("//div[@class='M3v0L sMgZR BXDW- DUxBc IM66u yVZ7H']//a[.='Авто-, мото']");
     }
 
     public WebElement getFieldMototechnics(){
-        return $("//a[@class='_0cNvO jTHPH'][text()='Мототехніка']");
+        return $("//a[.='Мототехніка']");
     }
 
     public WebElement getFieldAutoTool(){
-        return $("//a[@href='/ua/Avtoinstrument'][text()='Автоінструмент']");
+        return $("//a[.='Автоінструмент']");
     }
 }

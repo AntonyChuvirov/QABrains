@@ -16,4 +16,12 @@ public class HomePagePromUa extends HomePageElementsPromUa {
     public void clickSearchBtn(){
         getBtnSearch().click();
     }
+    //------------------------------------TestSelectRegionPromUa-------------------------------------------------------
+    public void clickFieldNameRegion(){
+        getFieldNameRegion().click();
+    }
+
+    public void clickTextWithNameRegionUnderFieldInput(){
+        getTextWithNameRegionUnderFieldInput().click();
+    }
 }
