@@ -7,7 +7,7 @@ public class ProductsPagePromUa extends ProductsPageElementsPromUa {
         super(driver);
     }
 
-    public void clickJACOBSMONARCH(){
+    public void clickCoffee(){
        getJACOBSMONARCH().click();
     }
 

@@ -13,15 +13,23 @@ public class HomePagePromUa extends HomePageElementsPromUa {
         driver.get("https://prom.ua/ua/");
     }
 
-    public void clickSearchBtn(){
+    public void clickBtnSearch(){
         getBtnSearch().click();
     }
-    //------------------------------------TestSelectRegionPromUa-------------------------------------------------------
+
     public void clickFieldNameRegion(){
         getFieldNameRegion().click();
     }
 
     public void clickTextWithNameRegionUnderFieldInput(){
         getTextWithNameRegionUnderFieldInput().click();
+    }
+
+    public void clickBtnLanguageUkrainian(){
+        getBtnLanguageUkrainian().click();
+    }
+
+    public void clickBtnLanguageRussian(){
+        getBtnLanguageRussian().click();
     }
 }

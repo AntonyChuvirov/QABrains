@@ -17,7 +17,7 @@ public class HomePageElementsPromUa extends BasePage {
     public WebElement getBtnSearch(){
         return $("//button[@class='VS-Ex yNx5B YY-wN vtaL- gPzcS _4msv1 blBdq aUEOj _3-Fnr Ly27e']");
     }
-//------------------------------------TestSelectRegionPromUa-------------------------------------------------------
+
     public WebElement getFieldNameRegion(){
         return $("//span[@class='_3Trjq aXB7S gwkkx']");
     }
@@ -28,5 +28,17 @@ public class HomePageElementsPromUa extends BasePage {
 
     public WebElement getTextWithNameRegionUnderFieldInput(){
         return $("//button[1]/div[1]/div[1]/span[1]");
+    }
+
+    public WebElement getBtnLanguageUkrainian(){
+        return $("//span[@title='Українська!']");
+    }
+
+    public WebElement getBtnLanguageRussian(){
+        return $("//span[@title='Русский']");
+    }
+
+    public WebElement getBtnSignIn(){
+        return $("//button[@data-qaid='sign-in']");
     }
 }
