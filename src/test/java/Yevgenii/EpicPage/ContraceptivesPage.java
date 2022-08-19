@@ -23,4 +23,19 @@ public class ContraceptivesPage extends ContraceptivesElements {
         getСonfirmRemoveProductBascket().click();
         return this;
     }
+
+    public ContraceptivesPage clickOpenProtuct0Btn() {
+        getOpenProtuct0Btn().click();
+        return this;
+    }
+
+    public ContraceptivesPage clickAddCompareProtuct0Btn() {
+        getAddCompareProtuct0Btn().click();
+        return this;
+    }
+
+    public ContraceptivesPage clickCompareBtn() {
+        getCompareBtn().click();
+        return this;
+    }
 }

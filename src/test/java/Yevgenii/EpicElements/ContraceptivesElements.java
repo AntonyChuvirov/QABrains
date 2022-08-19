@@ -33,4 +33,16 @@ public class ContraceptivesElements extends BasePage {
     public WebElement getVisibilityRemoveProductBascket() {
         return $("//p[contains(text(),'Ваш кошик порожній')]");
     }
+
+    public WebElement getOpenProtuct0Btn() {
+        return $("//div[@data-search-index='0']");
+    }
+
+    public WebElement getAddCompareProtuct0Btn() {
+        return $("//button[@data-text='До порівняння']");
+    }
+
+    public WebElement getCompareBtn() {
+        return $("//span[@class='header__compare-link-icon']");
+    }
 }
