@@ -22,4 +22,12 @@ public class ProductPage extends BasePage {
     public WebElement btnShowResult(){
         return $("//div[@class='popover-content']");
     }
+
+    public WebElement getSizeChart(){
+        return $("//a[@class='colorbox_size_chart__popup cboxElement']");
+    }
+    public WebElement popUpSize(){
+        return $("(//p[contains(text(),'В замірах можлива похибка до 2 см')])[2]");
+    }
 }
+
