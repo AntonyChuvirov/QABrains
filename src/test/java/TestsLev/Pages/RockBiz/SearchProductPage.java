@@ -25,4 +25,7 @@ public class SearchProductPage extends BasePage {
     public WebElement getLowHighPrice(){
         return $("//option[text()='Ціна (низька > висока)']");
     }
+    public WebElement firstTshirt(){
+        return $("(//a[@href='https://rockway.biz/ua/futbolka-lil-peep-chernaya'])[2]");
+    }
 }

@@ -43,5 +43,12 @@ public class HeaderPageRB extends BasePage {
     public WebElement getVzuttya(){
         return $("(//a[@class='dropdown-toggle dropdown-img'])[3]");
     }
+
+    public WebElement getClothes(){
+        return $("(//a[@class='dropdown-toggle dropdown-img'])[2]");
+    }
+    public WebElement getTShirt(){
+        return $("//a[text()='Футболки']");
+    }
 }
 
