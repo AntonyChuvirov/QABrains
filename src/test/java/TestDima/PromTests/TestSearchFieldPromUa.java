@@ -15,7 +15,7 @@ public class TestSearchFieldPromUa extends TestInit {
 
         homePagePromUa.goToHomePagePromUa();
         homePagePromUa.getSearchField().sendKeys("Xiaomi Redmi Note 11");
-        homePagePromUa.clickSearchBtn();
+        homePagePromUa.clickBtnSearch();
 
         ProductsPagePromUa productsPagePromUa = new ProductsPagePromUa(driver);
 

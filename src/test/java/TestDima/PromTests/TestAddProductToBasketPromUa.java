@@ -15,17 +15,17 @@ public class TestAddProductToBasketPromUa extends TestInit {
 
         homePagePromUa.goToHomePagePromUa();
         homePagePromUa.getSearchField().sendKeys("Кава");
-        homePagePromUa.clickSearchBtn();
+        homePagePromUa.clickBtnSearch();
 
         ProductsPagePromUa productsPagePromUa = new ProductsPagePromUa(driver);
 
         Assert.assertTrue(productsPagePromUa.getPageWithNameProduct().getText().contains("Кава"));
         Assert.assertTrue(productsPagePromUa.getFieldWithProduct().isDisplayed());
-        productsPagePromUa.clickJACOBSMONARCH();
+        productsPagePromUa.clickCoffee();
         Assert.assertTrue(productsPagePromUa.getBtnBuyProduct().isDisplayed());
         productsPagePromUa.clickBtnBuyProduct();
         Assert.assertTrue(productsPagePromUa.getWindowWithNameBasket().getText().contains("Кошик"));
-        Assert.assertTrue(productsPagePromUa.getNameProductInWindowBasket().getText().contains("JACOBS"));
+        Assert.assertTrue(productsPagePromUa.getNameProductInWindowBasket().isDisplayed());
         Assert.assertTrue(productsPagePromUa.getBtnBuyProductInBasket().isDisplayed());
         productsPagePromUa.clickBtnBuyProductInBasket();
         Assert.assertTrue(productsPagePromUa.getPagePlacingAnOrder().isDisplayed());
