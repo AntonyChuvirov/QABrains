@@ -3,6 +3,7 @@ package Yevgenii.EpicElements;
 import BaseClasses.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import java.util.List;
 
 public class ContraceptivesElements extends BasePage {
 
@@ -44,5 +45,13 @@ public class ContraceptivesElements extends BasePage {
 
     public WebElement getCompareBtn() {
         return $("//span[@class='header__compare-link-icon']");
+    }
+
+    public List<WebElement> getSortingBtns() {
+        return waitVisibleOfAllElements("//a[@class='btnFiltr changeFilterUrl']");
+    }
+
+    public WebElement getSeeProductСheap() {
+        return $("//p[@id='price6898348']");
     }
 }

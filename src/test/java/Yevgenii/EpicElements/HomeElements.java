@@ -16,7 +16,7 @@ public class HomeElements extends BasePage {
     }
 
     public List<WebElement> getVisibilityProduct() {
-        return waitVisibilityOfAllElements("//div[contains(@class,'columns product-Wrap card-wrapper')]//b[contains(text(),'Лом')]");
+        return waitVisibleOfAllElements("//div[contains(@class,'columns product-Wrap card-wrapper')]//b[contains(text(),'Лом')]");
     }
 
     public WebElement getSwitchLanguageBtn() {
