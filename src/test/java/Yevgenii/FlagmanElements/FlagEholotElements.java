@@ -40,10 +40,10 @@ public class FlagEholotElements extends BasePage {
     }
 
     public List<WebElement> getManufacturerProductFilter() {
-        return waitVisibilityOfAllElements("//ul[@id='sort_producer']//span[@class='checkbox-custom']");
+        return waitVisibleOfAllElements("//ul[@id='sort_producer']//span[@class='checkbox-custom']");
     }
 
     public List<WebElement> getVisibilityListProductsLowrance() {
-        return waitVisibilityOfAllElements("//div[contains(@goods-data-gtm,'Lowrance')]");
+        return waitVisibleOfAllElements("//div[contains(@goods-data-gtm,'Lowrance')]");
     }
 }
