@@ -5,12 +5,12 @@ import TestsLev.Pages.Japan.JapanHomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class RedirectionCheck extends TestInit {
+public class RedirectionTest extends TestInit {
     @Test
-    public void redirection(){
+    public void redirectionTest(){
         JapanHomePage japanHomePage = new JapanHomePage(driver);
 
-        openUrl("https://japan-ukraine.com/ua/");
+        goToTheJapan();
         japanHomePage.getParts().click();
 
         Assert.assertEquals(driver.getCurrentUrl(),"https://japan-ukraine.com/ua/makita-parts.php");
