@@ -6,9 +6,9 @@ import TestsLev.Pages.RockBiz.RockBizHomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Language extends TestInit {
+public class ChangeLanguageTest extends TestInit {
     @Test
-    public void lenguage(){
+    public void changeLanguageTest(){
         HeaderPageRB headerPageRB = new HeaderPageRB(driver);
         RockBizHomePage rockBizHomePage = new RockBizHomePage(driver);
 
