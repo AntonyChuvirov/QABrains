@@ -8,9 +8,8 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 import java.awt.*;
-import java.util.NoSuchElementException;
 
-public class BasketTesting  extends TestInit {
+public class BasketTestRozetka extends TestInit {
 
     public void driveMouse() {
         try {

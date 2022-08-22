@@ -26,4 +26,7 @@ public class HomePageStylus extends BasePage {
     public WebElement clickOnBtnCatalog(){
         return waitClickableElement("//button[@id = 'header_catalog']");
     }
+    public WebElement checkBtnMicrophone(){
+        return waitClickableElement("//div[@class = 'bottom-search']//*[name() = 'svg']");
+    }
 }

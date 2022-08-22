@@ -5,7 +5,7 @@ import IlonaTests.Pages.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class CatalogTesting extends TestInit {
+public class CatalogTestRozetka extends TestInit {
     @Test
     public void checkCatalog() {
         openUrl("https://rozetka.com.ua/ua/");
