@@ -9,6 +9,6 @@ public class CheckChosenProductPage extends BasePage {
         super(driver);
     }
     public WebElement checkChoseProductVisible(){
-        return $("//h1[contains(text(),'APPLE')]");
+        return waitClickableElement("//h1[contains(text(),'APPLE')]");
     }
 }

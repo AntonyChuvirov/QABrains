@@ -11,34 +11,34 @@ public class FlagEholotLackyElements extends BasePage {
     }
 
     public WebElement getFeedbackBtn() {
-        return $("//a[contains(text(),'Відгуки')]");
+        return waitClickableElement("//a[contains(text(),'Відгуки')]");
     }
 
     public WebElement selectStar1Btn() {
-        return $("//section[@id='rating-section']//div[@name='1']");
+        return waitClickableElement("//section[@id='rating-section']//div[@name='1']");
     }
 
     public WebElement getFieldAdvantageLacky() {
-        return $("//textarea[@id='dignity-field']");
+        return waitClickableElement("//textarea[@id='dignity-field']");
     }
 
     public WebElement getFieldFlawsLacky() {
-        return $("//textarea[@id='shortcomings-field']");
+        return waitClickableElement("//textarea[@id='shortcomings-field']");
     }
 
     public WebElement getFieldCommentLacky() {
-        return $("//textarea[@id='text-field']");
+        return waitClickableElement("//textarea[@id='text-field']");
     }
 
     public WebElement getFieldIntroduceyourselfLacky() {
-        return $("//input[@id='name-field']");
+        return waitClickableElement("//input[@id='name-field']");
     }
 
     public WebElement getLeavefeedbackBtnLacky() {
-        return $("//button[@class='rating-send-btn btn red-btn']");
+        return waitClickableElement("//button[@class='rating-send-btn btn red-btn']");
     }
 
     public WebElement getTextReviewAdded() {
-        return $("//div[@name='comments_msg']");
+        return waitClickableElement("//div[@name='comments_msg']");
     }
 }

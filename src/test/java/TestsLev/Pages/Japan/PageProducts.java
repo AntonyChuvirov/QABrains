@@ -1,7 +1,6 @@
 package TestsLev.Pages.Japan;
 
 import BaseClasses.BasePage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -10,7 +9,7 @@ public class PageProducts extends BasePage {
         super(driver);
     }
     public WebElement getBuy(){
-        return $("(//a[text()='Купить'])[1]");
+        return waitClickableElement("(//a[text()='Купить'])[1]");
 
     }
 }

@@ -9,29 +9,29 @@ public class RockBizHomePage extends BasePage {
         super(driver);
     }
     public WebElement getInput(){
-        return $("//input[@class='form-control input-lg']");
+        return waitClickableElement("//input[@class='form-control input-lg']");
     }
     public WebElement getBtnSearch (){
-        return $("//i[@class='fa fa-search']");
+        return waitClickableElement("//i[@class='fa fa-search']");
     }
 
     public WebElement otziviRus(){
-        return $("//a[text()='Отзывы']");
+        return waitClickableElement("//a[text()='Отзывы']");
     }
     public WebElement vidguki(){
-        return $("//a[text()='Відгуки']");
+        return waitClickableElement("//a[text()='Відгуки']");
     }
     public WebElement getlabelUser(){
-        return $("//li[@class='dropdown col-sm-4']");
+        return waitClickableElement("//li[@class='dropdown col-sm-4']");
     }
     public WebElement getBtnRgstr(){
-        return $("//a[text()='Реєстрація']");
+        return waitClickableElement("//a[text()='Реєстрація']");
     }
     public WebElement getAutorization(){
-        return $("//a[text()='Авторизація']");
+        return waitClickableElement("//a[text()='Авторизація']");
     }
     public WebElement getbtnPirsing(){
-        return $("(//a[@class='dropdown-toggle dropdown-img'])[6]");
+        return waitClickableElement("(//a[@class='dropdown-toggle dropdown-img'])[6]");
     }
 
 }

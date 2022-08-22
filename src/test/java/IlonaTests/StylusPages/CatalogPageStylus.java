@@ -9,6 +9,9 @@ public class CatalogPageStylus extends BasePage {
         super(driver);
     }
     public WebElement clickOnBtnInCatalog(){
-        return $("//div[@class = 'catalog-item']//span[contains(text(),'Apple')]");
+        return waitClickableElement("//div[@class = 'catalog-item']//span[contains(text(),'Apple')]");
+    }
+    public WebElement clickOnLogo(){
+        return waitClickableElement("//div[@class = 'header-middle']//a[@title = 'Інтернет-магазин Stylus']");
     }
 }

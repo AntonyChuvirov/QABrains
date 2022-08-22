@@ -23,8 +23,8 @@ public abstract class BasePage {
         return driver.findElements(By.xpath(locator));
     }
 
-    int BASIC_TIME = 15;
-    public WebElement $(String locator) {
+    int BASIC_TIME = 30;
+    public WebElement waitClickableElement(String locator) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(BASIC_TIME));
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
         return driver.findElement(By.xpath(locator));

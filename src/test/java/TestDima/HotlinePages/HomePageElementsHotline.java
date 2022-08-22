@@ -12,34 +12,34 @@ public class HomePageElementsHotline extends BasePage {
     }
 
     public WebElement getSearchField() {
-        return $("//input[@id='searchbox']");
+        return waitClickableElement("//input[@id='searchbox']");
     }
 
     public WebElement getBtnSearch() {
-        return $("//input[@id='doSearch']");
+        return waitClickableElement("//input[@id='doSearch']");
     }
 
     public WebElement getBtnAllCatalogs(){
-        return $("//a[@href='/catalog/']");
+        return waitClickableElement("//a[@href='/catalog/']");
     }
 
     public WebElement getBtnInCatalogTourismAndFishing(){
-        return $("//a[.='Туризм, Риболовля']");
+        return waitClickableElement("//a[.='Туризм, Риболовля']");
     }
 
     public WebElement getBtnElectronicCigarettes() {
-        return $("//a[@href='/adult/elektronnye-sigarety/']");
+        return waitClickableElement("//a[@href='/adult/elektronnye-sigarety/']");
     }
 
     public WebElement getBtnUkrainianLanguage(){
-        return $("//div[1]/header/div[1]/div/div/div[1]/div[3]/div/span[2]");
+        return waitClickableElement("//div[1]/header/div[1]/div/div/div[1]/div[3]/div/span[2]");
     }
 
     public WebElement getBtnRussianLanguage(){
-        return $("//div[1]/header/div[1]/div/div/div[1]/div[3]/div/span[1]");
+        return waitClickableElement("//div[1]/header/div[1]/div/div/div[1]/div[3]/div/span[1]");
     }
 
     public WebElement getBtnComparison(){
-        return $("//div[@class='item-compare']");
+        return waitClickableElement("//div[@class='item-compare']");
     }
 }

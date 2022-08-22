@@ -1,7 +1,6 @@
 package TestsLev.Pages.Japan;
 
 import BaseClasses.BasePage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -11,12 +10,12 @@ public class JapanHomePage extends BasePage {
         super(driver);
     }
     public WebElement getBtnAkcii(){
-        return $("//span[@class='glyphicons glyphicons-ok']");
+        return waitClickableElement("//span[@class='glyphicons glyphicons-ok']");
     }
     public WebElement getSearch(){
-        return $("//input[@id='search']");
+        return waitClickableElement("//input[@id='search']");
     }
     public WebElement getParts(){
-        return $("(//a[@href='https://japan-ukraine.com/ua/makita-parts.php'])[1]");
+        return waitClickableElement("(//a[@href='https://japan-ukraine.com/ua/makita-parts.php'])[1]");
     }
 }
