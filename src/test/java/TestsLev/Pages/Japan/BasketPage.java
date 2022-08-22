@@ -4,8 +4,8 @@ import BaseClasses.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class BascketPage extends BasePage {
-    public BascketPage(WebDriver driver) {
+public class BasketPage extends BasePage {
+    public BasketPage(WebDriver driver) {
         super(driver);
     }
     public WebElement getDelProduct(){

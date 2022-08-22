@@ -7,13 +7,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+
 import java.util.ArrayList;
 
 public class TestInit {
     public WebDriver driver;
 
     @BeforeMethod
-    public void setup (){
+    public void setup() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -41,7 +43,7 @@ public class TestInit {
     }
 
     public void changeTab(Integer index) {
-        ArrayList<String> tabs2 = new ArrayList<> (driver.getWindowHandles());
+        ArrayList<String> tabs2 = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs2.get(index));
     }
 
@@ -49,4 +51,11 @@ public class TestInit {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", webElement);
     }
 
+    public void goToTheJapan() {
+        openUrl("https://japan-ukraine.com/ua/");
+    }
+
+    public void goToRockBiz() {
+        openUrl("https://rockway.biz/ua/");
+    }
 }

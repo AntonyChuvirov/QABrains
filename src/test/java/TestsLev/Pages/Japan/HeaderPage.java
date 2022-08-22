@@ -11,6 +11,17 @@ public class HeaderPage extends BasePage {
         super(driver);
     }
 
+    public WebElement getBtnAkcii(){
+        return waitClickableElement("//span[@class='glyphicons glyphicons-ok']");
+    }
+
+    public WebElement getBtnAboutCompany(){
+        return waitClickableElement("//span[@class='glyphicons glyphicons-show-big-thumbnails']");
+    }
+    public WebElement getBtnContakts(){
+        return waitClickableElement("(//span[@class='glyphicons glyphicons-earphone'])[2]");
+    }
+
     public WebElement getCallBack() {
         return driver.findElement(By.xpath("//a[text()='Зворотній дзвінок']"));
     }
@@ -26,7 +37,6 @@ public class HeaderPage extends BasePage {
     public WebElement getComment() {
         return driver.findElement(By.xpath("(//textarea[@style='width:290px; height:100px; border:1px solid #cccccc; padding:5px 5px 5px 5px; margin-top:5px;'])[2]"));
     }
-
     public WebElement getCliclBtnCall() {
         return waitClickableElement("(//input[@class = 'general-vote'])[4]");
     }
@@ -39,6 +49,6 @@ public class HeaderPage extends BasePage {
         return waitClickableElement("//span[text()='1 товар']");
     }
     public WebElement getEmptyBacket(){
-        return waitClickableElement("//a[text()='Ваша корзина пуста']");
+        return waitClickableElement("//a[@id='empty_cart']");
     }
 }

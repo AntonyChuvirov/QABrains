@@ -5,22 +5,26 @@ import TestsLev.Pages.Japan.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class CheckBasketInput extends TestInit {
+public class CartTest extends TestInit {
     @Test
-    public void basketInput(){
+    public void basketInputandDelete(){
         JapanHomePage japanHomePage = new JapanHomePage(driver);
         SearchPage searchPage = new SearchPage(driver);
-        PageProducts pageProducts = new PageProducts(driver);
+        ProductsPage pageProducts = new ProductsPage(driver);
         HeaderPage headerPage = new HeaderPage(driver);
-        PopUpBacket popUpBacket = new PopUpBacket(driver);
+        PopUpCartPage popUpBacket = new PopUpCartPage(driver);
+        BasketPage basketPage = new BasketPage(driver);
 
-        openUrl("https://japan-ukraine.com/");
+        goToTheJapan();
         japanHomePage.getSearch().sendKeys("Дрель\n");
         searchPage.getSearchProduct().click();
         pageProducts.getBuy().click();
         popUpBacket.getPopUpBacket().click();
 
-
         Assert.assertEquals(headerPage.getProductIntoBasket().getText(),"1 товар");
+
+        basketPage.getDelProduct().click();
+
+        Assert.assertEquals(headerPage.getEmptyBacket().getText(),"Ваш кошик порожній");
     }
 }
