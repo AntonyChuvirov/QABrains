@@ -9,6 +9,6 @@ public class Cabinet extends BasePage {
         super(driver);
     }
     public WebElement finish(){
-        return $("//a[text()='Продовжити']");
+        return waitClickableElement("//a[text()='Продовжити']");
     }
 }

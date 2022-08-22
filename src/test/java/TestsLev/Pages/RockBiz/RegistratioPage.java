@@ -10,40 +10,40 @@ public class RegistratioPage extends BasePage {
     }
 
     public WebElement getName() {
-        return $("//input[@id='register_firstname']");
+        return waitClickableElement("//input[@id='register_firstname']");
     }
 
     public WebElement getLastName() {
-        return $("//input[@id='register_lastname']");
+        return waitClickableElement("//input[@id='register_lastname']");
     }
     public WebElement getPhone() {
-        return $("//input[@id='register_telephone']");
+        return waitClickableElement("//input[@id='register_telephone']");
     }
     public WebElement getEmail() {
-        return $("//input[@id='register_email']");
+        return waitClickableElement("//input[@id='register_email']");
     }
     public WebElement getPassword() {
-        return $("//input[@id='register_password']");
+        return waitClickableElement("//input[@id='register_password']");
     }
     public WebElement getCountry() {
-        return $("//select[@id='register_country_id']");
+        return waitClickableElement("//select[@id='register_country_id']");
     }
     public WebElement chooseContry() {
-        return $("//option[text()='Україна']");
+        return waitClickableElement("//option[text()='Україна']");
     }
     public WebElement getRigion() {
-        return $("//select[@id='register_zone_id']");
+        return waitClickableElement("//select[@id='register_zone_id']");
     }
     public WebElement chooseRigion() {
-        return $("//option[text()='Київська']");
+        return waitClickableElement("//option[text()='Київська']");
     }
     public WebElement getCity() {
-        return $("//select[@id='register_city']");
+        return waitClickableElement("//select[@id='register_city']");
     }
     public WebElement chooseCity() {
-        return $("//option[text()='Київ']");
+        return waitClickableElement("//option[text()='Київ']");
     }
     public WebElement btnContiniue() {
-        return $("//span[text()='Продовжити']");
+        return waitClickableElement("//span[text()='Продовжити']");
     }
 }

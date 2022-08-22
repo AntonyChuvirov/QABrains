@@ -10,45 +10,45 @@ public class HeaderPageRB extends BasePage {
     }
 
     public WebElement getSuvenir() {
-        return $("(//a[@class='dropdown-toggle dropdown-img'])[5]");
+        return waitClickableElement("(//a[@class='dropdown-toggle dropdown-img'])[5]");
     }
 
     public WebElement getPirsing() {
-        return $("(//a[@class='dropdown-toggle dropdown-img'])[6]");
+        return waitClickableElement("(//a[@class='dropdown-toggle dropdown-img'])[6]");
     }
 
     public WebElement getTextPazl() {
-        return $("//a[contains(text(),'Пазли')]");
+        return waitClickableElement("//a[contains(text(),'Пазли')]");
     }
 
     public WebElement getVidi() {
-        return $("//a[contains(text(),'Види')]");
+        return waitClickableElement("//a[contains(text(),'Види')]");
     }
 
     public WebElement getLinks() {
-        return $("//a[@href='https://www.instagram.com/rockwaybiz/']");
+        return waitClickableElement("//a[@href='https://www.instagram.com/rockwaybiz/']");
     }
 
     public WebElement getLenguageBtn(){
-        return $("//div[@id='form-language']");
+        return waitClickableElement("//div[@id='form-language']");
     }
 
     public WebElement getRusLenguage(){
-        return $("(//button[@class='btn btn-link btn-block language-select'])[2]");
+        return waitClickableElement("(//button[@class='btn btn-link btn-block language-select'])[2]");
     }
     public WebElement getUaLenguage(){
-        return $("(//button[@class='btn btn-link btn-block language-select'])[1]");
+        return waitClickableElement("(//button[@class='btn btn-link btn-block language-select'])[1]");
     }
 
     public WebElement getVzuttya(){
-        return $("(//a[@class='dropdown-toggle dropdown-img'])[3]");
+        return waitClickableElement("(//a[@class='dropdown-toggle dropdown-img'])[3]");
     }
 
     public WebElement getClothes(){
-        return $("(//a[@class='dropdown-toggle dropdown-img'])[2]");
+        return waitClickableElement("(//a[@class='dropdown-toggle dropdown-img'])[2]");
     }
     public WebElement getTShirt(){
-        return $("//a[text()='Футболки']");
+        return waitClickableElement("//a[text()='Футболки']");
     }
 }
 

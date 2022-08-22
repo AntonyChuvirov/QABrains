@@ -9,6 +9,6 @@ public class ChooseTVPage extends BasePage {
         super(driver);
     }
     public WebElement chooseTv(){
-        return $("//div[@class = 'content-block have-action']//a[@title = 'Телевізор Samsung QE75Q67B']");
+        return waitClickableElement("//div[@class = 'content-block have-action']//a[@title = 'Телевізор Samsung QE75Q67B']");
     }
 }

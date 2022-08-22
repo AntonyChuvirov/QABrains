@@ -9,6 +9,6 @@ public class CheckContactsPage extends BasePage {
         super(driver);
     }
     public WebElement checkContactsVisible(){
-        return $("//div[@class = 'header-top']//a[@title = 'Контакти']");
+        return waitClickableElement("//div[@class = 'header-top']//a[@title = 'Контакти']");
     }
 }

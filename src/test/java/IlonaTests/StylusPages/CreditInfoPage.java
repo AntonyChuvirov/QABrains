@@ -9,6 +9,6 @@ public class CreditInfoPage extends BasePage {
         super(driver);
     }
     public WebElement checkInfoCredit(){
-        return $("//h1[contains(text(),'Купівля в кредит')]");
+        return waitClickableElement("//h1[contains(text(),'Купівля в кредит')]");
     }
 }

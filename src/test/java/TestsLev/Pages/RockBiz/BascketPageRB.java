@@ -9,9 +9,9 @@ public class BascketPageRB extends BasePage {
         super(driver);
     }
     public WebElement popUpBascket(){
-        return $("//button [text()='Оформити замовлення']");
+        return waitClickableElement("//button [text()='Оформити замовлення']");
     }
     public WebElement text(){
-        return $("(//*[text()='Оформлення замовлення'])[3]");
+        return waitClickableElement("(//*[text()='Оформлення замовлення'])[3]");
     }
 }

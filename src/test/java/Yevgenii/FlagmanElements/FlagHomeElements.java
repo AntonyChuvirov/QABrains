@@ -11,94 +11,94 @@ public class FlagHomeElements extends BasePage {
     }
 
     public WebElement clickLanguageBtnRu() {
-        return $("//a[contains(text(),'Рус')]");
+        return waitClickableElement("//a[contains(text(),'Рус')]");
     }
 
     public WebElement clickLanguageBtnUa() {
-        return $("//a[contains(text(),'Укр')]");
+        return waitClickableElement("//a[contains(text(),'Укр')]");
     }
 
     public WebElement getResaultLenguagRu() {
-        return $("//a[contains(text(),'Войти с паролем')][1]");
+        return waitClickableElement("//a[contains(text(),'Войти с паролем')][1]");
     }
 
     public WebElement getResaultLenguagUa() {
-        return $("//a[contains(text(),'Увійти з паролем')][1]");
+        return waitClickableElement("//a[contains(text(),'Увійти з паролем')][1]");
     }
 
     public WebElement getFieldInput() {
-        return $("//input[@id='search-text']");
+        return waitClickableElement("//input[@id='search-text']");
     }
 
     public WebElement clickSearchBtn() {
-        return $("//button[@class='search'][1]");
+        return waitClickableElement("//button[@class='search'][1]");
     }
 
     public WebElement getVisibilityText() {
-        return $("//span[text()='«атрактант»']");
+        return waitClickableElement("//span[text()='«атрактант»']");
     }
 
     public WebElement getVisibilityNotText() {
-        return $("//p[text()='Нічого не знайдено']");
+        return waitClickableElement("//p[text()='Нічого не знайдено']");
     }
 
     public WebElement getCatalogBtn() {
-        return $("//i[@class='icon icon-menu_item_1']");
+        return waitClickableElement("//i[@class='icon icon-menu_item_1']");
     }
 
     public WebElement getCatalogEholotBtn() {
-        return $("//div[contains(text(),'Ехолоти, навігатори і аксесуари')]");
+        return waitClickableElement("//div[contains(text(),'Ехолоти, навігатори і аксесуари')]");
     }
 
     public WebElement getCallBackHeader() {
-        return $("//a[@id='callback-header']");
+        return waitClickableElement("//a[@id='callback-header']");
     }
 
     public WebElement getInputNamber() {
-        return $("//input[@name='contact']");
+        return waitClickableElement("//input[@name='contact']");
     }
 
     public WebElement getInputName() {
-        return $("//input[@name='name']");
+        return waitClickableElement("//input[@name='name']");
     }
 
     public WebElement getinputComment() {
-        return $("//textarea[@name='message']");
+        return waitClickableElement("//textarea[@name='message']");
     }
 
     public WebElement getCallBtn() {
-        return $("//button[@class='btn']");
+        return waitClickableElement("//button[@class='btn']");
     }
 
     public WebElement getVisibilityApplicationCall() {
-        return $("//div[@name='msg']");
+        return waitClickableElement("//div[@name='msg']");
     }
 
     public WebElement getFieldNewsSubscription() {
-        return $("//input[@id='subscribeEmailInput']");
+        return waitClickableElement("//input[@id='subscribeEmailInput']");
     }
 
     public WebElement getFieldNewsSubscriptionBtn() {
-        return $("//button[@name='subscribe']");
+        return waitClickableElement("//button[@name='subscribe']");
     }
 
     public WebElement getLoginBtn() {
-        return $("//li/a[@name='signin']");
+        return waitClickableElement("//li/a[@name='signin']");
     }
 
     public WebElement getFieldInputNamber() {
-        return $("//input[@id='login-field']");
+        return waitClickableElement("//input[@id='login-field']");
     }
 
     public WebElement getFieldInputPassword() {
-        return $("//input[@id='password-field']");
+        return waitClickableElement("//input[@id='password-field']");
     }
 
     public WebElement getEnterBtn() {
-        return $("//button[@class='btn btn-big']");
+        return waitClickableElement("//button[@class='btn btn-big']");
     }
 
     public WebElement getVisibilityTextLogin() {
-        return $("//a[contains(text(),'Привіт')]");
+        return waitClickableElement("//a[contains(text(),'Привіт')]");
     }
 }

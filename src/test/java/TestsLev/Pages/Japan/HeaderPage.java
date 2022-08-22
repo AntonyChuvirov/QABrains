@@ -28,17 +28,17 @@ public class HeaderPage extends BasePage {
     }
 
     public WebElement getCliclBtnCall() {
-        return $("(//input[@class = 'general-vote'])[4]");
+        return waitClickableElement("(//input[@class = 'general-vote'])[4]");
     }
 
     public WebElement getDelivery() {
-        return $("(//div[@class='m-link'])[3]");
+        return waitClickableElement("(//div[@class='m-link'])[3]");
     }
 
     public WebElement getProductIntoBasket(){
-        return $("//span[text()='1 товар']");
+        return waitClickableElement("//span[text()='1 товар']");
     }
     public WebElement getEmptyBacket(){
-        return $("//a[text()='Ваша корзина пуста']");
+        return waitClickableElement("//a[text()='Ваша корзина пуста']");
     }
 }

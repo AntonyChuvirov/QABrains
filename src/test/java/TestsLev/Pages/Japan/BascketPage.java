@@ -9,7 +9,7 @@ public class BascketPage extends BasePage {
         super(driver);
     }
     public WebElement getDelProduct(){
-        return $("(//a[@class='delete_item'])[1]");
+        return waitClickableElement("(//a[@class='delete_item'])[1]");
     }
 
 }

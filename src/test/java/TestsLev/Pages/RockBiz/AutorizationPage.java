@@ -9,12 +9,12 @@ public class AutorizationPage extends BasePage {
         super(driver);
     }
     public WebElement getInputEmail(){
-        return $("//input[@id='input-email']");
+        return waitClickableElement("//input[@id='input-email']");
     }
     public WebElement getInputPassword(){
-        return $("//input[@id='input-password']");
+        return waitClickableElement("//input[@id='input-password']");
     }
     public WebElement getEnter(){
-        return $("//input[@class='btn btn-primary']");
+        return waitClickableElement("//input[@class='btn btn-primary']");
     }
 }
