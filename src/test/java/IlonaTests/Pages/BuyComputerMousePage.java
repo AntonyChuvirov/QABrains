@@ -9,7 +9,8 @@ public class BuyComputerMousePage extends BasePage {
     public BuyComputerMousePage(WebDriver driver) {
         super(driver);
     }
-    public WebElement clickOnBtnBuy(){
-        return driver.findElement(By.xpath("//span[@class = 'buy-button__label ng-star-inserted' or @title = 'Купити'][1]"));
+
+    public WebElement clickOnBtnBuy() {
+        return waitClickableElement("//div[@class = 'product-trade ng-star-inserted']//button[@aria-label = 'Купити']");
     }
 }
