@@ -12,7 +12,7 @@ public class ContraceptivesElements extends BasePage {
     }
 
     public WebElement getBuyContraceptiveBtn() {
-        return $("//button[@data-card-params='304564, ,1']");
+        return $("//button[@data-card-params='304567, ,1']");
     }
 
     public WebElement getSeeProductAddedBascket() {

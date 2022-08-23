@@ -66,4 +66,16 @@ public class HomeElements extends BasePage {
     public WebElement getVisibilityTextContraceptives() {
         return $("//h1['Засоби контрацепції']");
     }
+
+    public List<WebElement> getPhotoSkelet() {
+        return waitVisibleOfAllElements("//div[@style='margin-right: 10px;']");
+    }
+
+    public WebElement getSlideNextBtn() {
+        return $("//div[@aria-label='Next slide']");
+    }
+
+    public List<WebElement> getActivePhotoSkelet() {
+        return waitVisibleOfAllElements("//img[contains(@alt,'анатомічний скелет людини 181 см - фото')]");
+    }
 }
