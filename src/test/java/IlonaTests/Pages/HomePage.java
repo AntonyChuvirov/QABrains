@@ -22,6 +22,10 @@ public class HomePage extends BasePage {
     public WebElement clickBtnMicrophone(){
         return driver.findElement(By.xpath("//button[@aria-label = 'Голосовой поиск']"));
     }
+    public WebElement clickBtnPointCheckOut(){
+        return waitClickableElement("//a[contains(text(),'Точки видачі Rozetka')]");
+    }
+
 }
 
 
