@@ -25,6 +25,9 @@ public class HomePage extends BasePage {
     public WebElement clickBtnPointCheckOut(){
         return waitClickableElement("//a[contains(text(),'Точки видачі Rozetka')]");
     }
+    public WebElement clickBtnInfoAboutCompany(){
+        return waitClickableElement("//a[contains(text(),' Про нас ')]");
+    }
 
 }
 
