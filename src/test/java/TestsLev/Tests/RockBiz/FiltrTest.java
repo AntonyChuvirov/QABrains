@@ -7,20 +7,18 @@ import TestsLev.Pages.RockBiz.SearchProductPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class CheckFiltr extends TestInit {
+public class FiltrTest extends TestInit {
     @Test
-    public void filtr(){
+    public void filtrTest(){
         RockBizHomePage rockBizHomePage = new RockBizHomePage(driver);
         ProductPage productPage = new ProductPage(driver);
         SearchProductPage searchProductPage = new SearchProductPage(driver);
 
-        openUrl("https://rockway.biz/ua/");
+        goToRockBiz();
         rockBizHomePage.getbtnPirsing().click();
         productPage.filtrWhite().click();
         productPage.btnShowResult().click();
 
         Assert.assertEquals(searchProductPage.getResultWhite().getText(),"Пірсинг Колір Білий");
-
-
     }
 }

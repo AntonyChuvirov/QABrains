@@ -1,27 +1,26 @@
 package TestsLev.Tests.RockBiz;
 
 import BaseClasses.TestInit;
-import TestsLev.Pages.RockBiz.HeaderPageRB;
+import TestsLev.Pages.RockBiz.HeaderPage;
 import TestsLev.Pages.RockBiz.RockBizHomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class ChangeLanguageTest extends TestInit {
+public class LanguageTest extends TestInit {
     @Test
-    public void changeLanguageTest(){
-        HeaderPageRB headerPageRB = new HeaderPageRB(driver);
+    public void languageTest(){
+        HeaderPage headerPage = new HeaderPage(driver);
         RockBizHomePage rockBizHomePage = new RockBizHomePage(driver);
 
-        openUrl("https://rockway.biz/ua/");
-        headerPageRB.getLenguageBtn().click();
-        headerPageRB.getRusLenguage().click();
+        goToRockBiz();
+        headerPage.getLenguageBtn().click();
+        headerPage.getRusLenguage().click();
 
         Assert.assertEquals(rockBizHomePage.otziviRus().getText(),"Отзывы");
 
-        headerPageRB.getLenguageBtn().click();
-        headerPageRB.getUaLenguage().click();
+        headerPage.getLenguageBtn().click();
+        headerPage.getUaLenguage().click();
 
         Assert.assertEquals(rockBizHomePage.vidguki().getText(),"Відгуки");
     }
 }
-

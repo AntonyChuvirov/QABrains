@@ -33,5 +33,4 @@ public class RockBizHomePage extends BasePage {
     public WebElement getbtnPirsing(){
         return waitClickableElement("(//a[@class='dropdown-toggle dropdown-img'])[6]");
     }
-
 }

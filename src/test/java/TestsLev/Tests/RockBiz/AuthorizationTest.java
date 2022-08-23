@@ -1,23 +1,23 @@
 package TestsLev.Tests.RockBiz;
 
 import BaseClasses.TestInit;
-import TestsLev.Pages.RockBiz.AutorizationPage;
+import TestsLev.Pages.RockBiz.AuthorizationPage;
 import TestsLev.Pages.RockBiz.RockBizHomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Autorization extends TestInit {
+public class AuthorizationTest extends TestInit {
     @Test
-    public void checkAutorization(){
+    public void checkAuthorization(){
         RockBizHomePage rockBizHomePage = new RockBizHomePage(driver);
-        AutorizationPage autorizationPage = new AutorizationPage(driver);
+        AuthorizationPage authorizationPage = new AuthorizationPage(driver);
 
-        openUrl("https://rockway.biz/ua/");
+        goToRockBiz();
         rockBizHomePage.getlabelUser().click();
         rockBizHomePage.getAutorization().click();
-        autorizationPage.getInputEmail().sendKeys("lvovlev88@gmail.com");
-        autorizationPage.getInputPassword().sendKeys("lovebug1988");
-        autorizationPage.getEnter().click();
+        authorizationPage.getInputEmail().sendKeys("lvovlev88@gmail.com");
+        authorizationPage.getInputPassword().sendKeys("lovebug1988");
+        authorizationPage.getEnter().click();
 
         Assert.assertEquals(driver.getCurrentUrl(),"https://rockway.biz/ua/my-account/");
     }

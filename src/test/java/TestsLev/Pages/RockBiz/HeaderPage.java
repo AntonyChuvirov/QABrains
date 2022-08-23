@@ -4,8 +4,8 @@ import BaseClasses.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class HeaderPageRB extends BasePage {
-    public HeaderPageRB(WebDriver driver) {
+public class HeaderPage extends BasePage {
+    public HeaderPage(WebDriver driver) {
         super(driver);
     }
 
@@ -51,4 +51,3 @@ public class HeaderPageRB extends BasePage {
         return waitClickableElement("//a[text()='Футболки']");
     }
 }
-

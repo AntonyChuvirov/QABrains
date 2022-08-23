@@ -30,4 +30,3 @@ public class ProductPage extends BasePage {
         return waitClickableElement("(//p[contains(text(),'В замірах можлива похибка до 2 см')])[2]");
     }
 }
-

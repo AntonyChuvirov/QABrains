@@ -4,8 +4,8 @@ import BaseClasses.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class BascketPageRB extends BasePage {
-    public BascketPageRB(WebDriver driver) {
+public class CartPage extends BasePage {
+    public CartPage(WebDriver driver) {
         super(driver);
     }
     public WebElement popUpBascket(){

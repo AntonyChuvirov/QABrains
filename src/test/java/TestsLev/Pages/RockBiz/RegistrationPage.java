@@ -4,8 +4,8 @@ import BaseClasses.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class RegistratioPage extends BasePage {
-    public RegistratioPage(WebDriver driver) {
+public class RegistrationPage extends BasePage {
+    public RegistrationPage(WebDriver driver) {
         super(driver);
     }
 
