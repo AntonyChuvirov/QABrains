@@ -5,15 +5,13 @@ import TestsLev.Pages.RockBiz.RockBizHomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.awt.*;
-
-public class SearchInputCheck extends TestInit {
+public class SearchInputTest extends TestInit {
 
     @Test
-    public void searchCheck(){
+    public void searchInputTest(){
         RockBizHomePage rockBizHomePage = new RockBizHomePage(driver);
 
-        openUrl("https://rockway.biz/ua/");
+        goToRockBiz();
         rockBizHomePage.getInput().sendKeys("Test");
         rockBizHomePage.getBtnSearch().click();
 

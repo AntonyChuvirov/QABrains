@@ -22,7 +22,7 @@ public class SearchProductPage extends BasePage {
     public WebElement getSorting(){
         return driver.findElement(By.id("input-sort"));
     }
-    public WebElement getLowHighPrice(){
+    public WebElement getLowToHighPrice(){
         return waitClickableElement("//option[text()='Ціна (низька > висока)']");
     }
     public WebElement firstTshirt(){

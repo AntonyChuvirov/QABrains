@@ -4,8 +4,8 @@ import BaseClasses.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class AutorizationPage extends BasePage {
-    public AutorizationPage(WebDriver driver) {
+public class AuthorizationPage extends BasePage {
+    public AuthorizationPage(WebDriver driver) {
         super(driver);
     }
     public WebElement getInputEmail(){
