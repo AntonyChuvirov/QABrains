@@ -15,7 +15,6 @@ public class ComputerMousePage extends BasePage {
         return driver.findElements(By.xpath("//div[@data-tile='small']"));
     }
 
-
     public WebElement computerMouseVisible() {
         return driver.findElement(By.xpath("//h1"));
     }
