@@ -32,8 +32,6 @@ public class ProductsPagePromUa extends ProductsPageElementsPromUa {
             testInit.sleep(1);
         }
     }
-
-
     //---------------TestSortingProductByBrandPromUa----------
     public void clickProductFromListHouseAndGarden() {
         getListProductsFromListHouseAndGarden().get(36).click();

@@ -9,6 +9,6 @@ public class InputSpecialSymbolsPage extends BasePage {
         super(driver);
     }
     public WebElement notFoundVisible(){
-        return $("//div[@class = 'page-not-found-title']");
+        return waitClickableElement("//div[@class = 'page-not-found-title']");
     }
 }

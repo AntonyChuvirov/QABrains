@@ -9,6 +9,6 @@ public class DeliveryPaymentPage extends BasePage {
         super(driver);
     }
     public WebElement checkDeliveryPayment(){
-        return $("//h1[contains(text(),'Доставка і оплата')]");
+        return waitClickableElement("//h1[contains(text(),'Доставка і оплата')]");
     }
 }

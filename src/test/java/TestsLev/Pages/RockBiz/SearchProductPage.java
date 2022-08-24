@@ -10,22 +10,22 @@ public class SearchProductPage extends BasePage {
         super(driver);
     }
     public WebElement getChooseProduct(){
-        return $("(//a[@href='https://rockway.biz/ua/futbolka-eskimo-callboy-king-of-the-rabbits'])[2]");
+        return waitClickableElement("(//a[@href='https://rockway.biz/ua/futbolka-eskimo-callboy-king-of-the-rabbits'])[2]");
     }
     public WebElement getResultWhite(){
-        return $("//h1");
+        return waitClickableElement("//h1");
     }
 
     public WebElement resultVzuttya(){
-        return $("//h1");
+        return waitClickableElement("//h1");
     }
     public WebElement getSorting(){
         return driver.findElement(By.id("input-sort"));
     }
-    public WebElement getLowHighPrice(){
-        return $("//option[text()='Ціна (низька > висока)']");
+    public WebElement getLowToHighPrice(){
+        return waitClickableElement("//option[text()='Ціна (низька > висока)']");
     }
     public WebElement firstTshirt(){
-        return $("(//a[@href='https://rockway.biz/ua/futbolka-lil-peep-chernaya'])[2]");
+        return waitClickableElement("(//a[@href='https://rockway.biz/ua/futbolka-lil-peep-chernaya'])[2]");
     }
 }

@@ -11,16 +11,15 @@ public class TestSortingProductByBrandPromUa extends TestInit {
 
 
     @Test
-    public void checkSortingProductByBrandPromUa(){
+    public void checkSortingProductByBrandPromUa() {
 
         HomePagePromUa homePagePromUa = new HomePagePromUa(driver);
 
         homePagePromUa.goToHomePagePromUa();
 
         ProductsPagePromUa productsPagePromUa = new ProductsPagePromUa(driver);
-        PageCatalogElementsPromUa pageCatalogElementsPromUa = new PageCatalogElementsPromUa(driver);
         Actions actions = new Actions(driver);
-//        actions.moveToElement(pageCatalogElementsPromUa.getBtnHouseAndGarden()).build().perform();
+        actions.moveToElement(productsPagePromUa.getBtnHouseAndGarden()).build().perform();
         productsPagePromUa.clickProductFromListHouseAndGarden();
         Assert.assertTrue(productsPagePromUa.getPageWithNameProductAfterCatalog().isDisplayed());
         productsPagePromUa.clickTypeProductInListProducts();

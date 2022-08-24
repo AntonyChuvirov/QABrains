@@ -12,58 +12,70 @@ public class HomeElements extends BasePage {
     }
 
     public WebElement getSearchField() {
-        return $("//div/input[@type='text']");
+        return waitClickableElement("//div/input[@type='text']");
     }
 
     public List<WebElement> getVisibilityProduct() {
-        return waitVisibilityOfAllElements("//div[contains(@class,'columns product-Wrap card-wrapper')]//b[contains(text(),'Лом')]");
+        return waitVisibleOfAllElements("//div[contains(@class,'columns product-Wrap card-wrapper')]//b[contains(text(),'Лом')]");
     }
 
     public WebElement getSwitchLanguageBtn() {
-        return $("//span[@class='switch__lever']");
+        return waitClickableElement("//span[@class='switch__lever']");
     }
 
     public WebElement getVisibilityTextBtnRu() {
-        return $("//div[contains(text(),'Каталог товаров')]");
+        return waitClickableElement("//div[contains(text(),'Каталог товаров')]");
     }
 
     public WebElement getVisibilityTextBtnUa() {
-        return $("//div[contains(text(),'Каталог товарів')]");
+        return waitClickableElement("//div[contains(text(),'Каталог товарів')]");
     }
 
     public WebElement clickBtnScrollUp() {
-        return $("//div[@class='_f8Ueuq']");
+        return waitClickableElement("//div[@class='_f8Ueuq']");
     }
 
     public WebElement getBtnAddressStore() {
-        return $("//div[@class='header__locations']");
+        return waitClickableElement("//div[@class='header__locations']");
     }
 
     public WebElement getAddressStore() {
-        return $("//div[contains(text(),'Бровари')]/../../../../button");
+        return waitClickableElement("//div[contains(text(),'Бровари')]/../../../../button");
     }
 
     public WebElement getVisibilityTextAddress() {
-        return $("//div[@class='header__locations-street']//span[@title='Бровари, вул. Київська, 253']");
+        return waitClickableElement("//div[@class='header__locations-street']//span[@title='Бровари, вул. Київська, 253']");
     }
 
     public WebElement getMenuProductBtn() {
-        return $("//div[@class='header__menu-opener-button-text']");
+        return waitClickableElement("//div[@class='header__menu-opener-button-text']");
     }
 
     public WebElement selectSectionProductContraceptives() {
-        return $("//a[contains(text(),'Краса та здоров')]");
+        return waitClickableElement("//a[contains(text(),'Краса та здоров')]");
     }
 
     public WebElement getSectionProductContraceptives() {
-        return $("//a[@class='catalog-menu__level-2'][@title='Засоби контрацепції']");
+        return waitClickableElement("//a[@class='catalog-menu__level-2'][@title='Засоби контрацепції']");
     }
 
     public WebElement closePopupWindow() {
-        return $("//div[@class='_lf1rdL']");
+        return waitClickableElement("//div[@class='_lf1rdL']");
     }
 
     public WebElement getVisibilityTextContraceptives() {
-        return $("//h1['Засоби контрацепції']");
+        return waitClickableElement("//h1['Засоби контрацепції']");
+    }
+
+    public List<WebElement> getPhotoSkelet() {
+        return waitVisibleOfAllElements("//div[@style='margin-right: 10px;']");
+    }
+
+    public WebElement getSlideNextBtn() {
+        return waitClickableElement("//div[@aria-label='Next slide']");
+    }
+
+    public List<WebElement> getActivePhotoSkelet() {
+        return waitVisibleOfAllElements("//img[contains(@alt,'анатомічний скелет людини 181 см - фото')]");
     }
 }

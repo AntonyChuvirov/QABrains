@@ -9,6 +9,6 @@ public class ClickBtnBuyPage extends BasePage {
         super(driver);
     }
     public WebElement clickOnBtnBuy(){
-        return $("//div[@class = 'actions-block']//button[contains(text(),'Купити')][1]");
+        return waitClickableElement("//div[@class = 'actions-block']//button[contains(text(),'Купити')][1]");
     }
 }

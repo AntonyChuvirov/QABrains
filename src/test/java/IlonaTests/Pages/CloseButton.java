@@ -10,6 +10,6 @@ public class CloseButton extends BasePage {
         super(driver);
     }
     public WebElement closeTheWindow(){
-        return driver.findElement(By.xpath("//button[@class= 'modal__close']"));
+        return driver.findElement(By.xpath("//button[@aria-label = 'Закрити модальне вікно']"));
     }
 }

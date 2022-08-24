@@ -38,4 +38,9 @@ public class ContraceptivesPage extends ContraceptivesElements {
         getCompareBtn().click();
         return this;
     }
+
+    public ContraceptivesPage clickSortingBtn() {
+        getSortingBtns().get(0).click();
+        return this;
+    }
 }

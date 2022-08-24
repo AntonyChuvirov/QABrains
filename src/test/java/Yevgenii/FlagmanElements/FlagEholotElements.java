@@ -12,38 +12,38 @@ public class FlagEholotElements extends BasePage {
     }
 
     public WebElement clickEholotBtn() {
-        return $("//a[text()='Ехолоти']");
+        return waitClickableElement("//a[text()='Ехолоти']");
     }
 
     public WebElement clickSortingEholotBtn() {
-        return $("//div[contains(@class,'hidden-xs')]//child::select");
+        return waitClickableElement("//div[contains(@class,'hidden-xs')]//child::select");
     }
 
     public WebElement clickCompareBtn() {
-        return $("//div[contains(@goods-data-gtm, 'Lucky FF 518')]//child::ul/li[@name='compare_details']");
+        return waitClickableElement("//div[contains(@goods-data-gtm, 'Lucky FF 518')]//child::ul/li[@name='compare_details']");
     }
 
     public WebElement getResaultCompareBtn() {
-        return $("//span[@class='compare-count']");
+        return waitClickableElement("//span[@class='compare-count']");
     }
 
     public WebElement getBasketBtn() {
-        return $("//i[@onmousedown='try { rrApi.addToBasket(248992) } catch(e) {}']");
+        return waitClickableElement("//i[@onmousedown='try { rrApi.addToBasket(248992) } catch(e) {}']");
     }
 
     public WebElement getVisibleBasket() {
-        return $("//h1[@class='popup-title']");
+        return waitClickableElement("//h1[@class='popup-title']");
     }
 
     public WebElement getEholotLackyBtn() {
-        return $("//a[contains(text(),'Lucky FF 518')]");
+        return waitClickableElement("//a[contains(text(),'Lucky FF 518')]");
     }
 
     public List<WebElement> getManufacturerProductFilter() {
-        return waitVisibilityOfAllElements("//ul[@id='sort_producer']//span[@class='checkbox-custom']");
+        return waitVisibleOfAllElements("//ul[@id='sort_producer']//span[@class='checkbox-custom']");
     }
 
     public List<WebElement> getVisibilityListProductsLowrance() {
-        return waitVisibilityOfAllElements("//div[contains(@goods-data-gtm,'Lowrance')]");
+        return waitVisibleOfAllElements("//div[contains(@goods-data-gtm,'Lowrance')]");
     }
 }

@@ -15,12 +15,9 @@ public class TestChangeCatalogWithoutClickPromUa extends TestInit {
 
         homePagePromUa.goToHomePagePromUa();
 
-
         ProductsPagePromUa productsPagePromUa = new ProductsPagePromUa(driver);
 
-//
         Actions actions = new Actions(driver);
-//        actions.moveToElement(productsPagePromUa.getListCatalogWithCategoriesProduct()).build().perform();
 
         productsPagePromUa.moveToCategoriesProductInListCatalogWithCategoriesProduct();
         actions.moveToElement(productsPagePromUa.getBtnMedicinesAndMedicalProducts()).build().perform();

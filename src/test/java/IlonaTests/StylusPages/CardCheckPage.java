@@ -9,6 +9,6 @@ public class CardCheckPage extends BasePage {
         super(driver);
     }
     public WebElement cardVisible(){
-        return $("//div[contains(text(),'Ви додали в кошик')]");
+        return waitClickableElement("//div[contains(text(),'Ви додали в кошик')]");
     }
 }

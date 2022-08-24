@@ -10,24 +10,23 @@ public class ProductPage extends BasePage {
         super(driver);
     }
     public WebElement getSize(){
-        return $("//span[text()='XL']");
+        return waitClickableElement("//span[text()='XL']");
     }
     public WebElement buy(){
-        return $("//button[@id='button-cart-product']");
+        return waitClickableElement("//button[@id='button-cart-product']");
     }
 
     public WebElement filtrWhite(){
         return driver.findElement(By.name("ocf[10386]"));
     }
     public WebElement btnShowResult(){
-        return $("//div[@class='popover-content']");
+        return waitClickableElement("//div[@class='popover-content']");
     }
 
     public WebElement getSizeChart(){
-        return $("//a[@class='colorbox_size_chart__popup cboxElement']");
+        return waitClickableElement("//a[@class='colorbox_size_chart__popup cboxElement']");
     }
     public WebElement popUpSize(){
-        return $("(//p[contains(text(),'В замірах можлива похибка до 2 см')])[2]");
+        return waitClickableElement("(//p[contains(text(),'В замірах можлива похибка до 2 см')])[2]");
     }
 }
-
