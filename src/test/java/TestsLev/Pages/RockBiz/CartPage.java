@@ -11,7 +11,14 @@ public class CartPage extends BasePage {
     public WebElement popUpBascket(){
         return waitClickableElement("//button [text()='Оформити замовлення']");
     }
-    public WebElement text(){
-        return waitClickableElement("(//*[text()='Оформлення замовлення'])[3]");
+    public WebElement basketWithProduct(){
+        return waitClickableElement("//span[contains(text(),'Товарів: 1')]");
+    }
+
+    public WebElement delbtn(){
+        return waitClickableElement("//button[@data-onclick='removeProduct']");
+    }
+    public WebElement baskeEmpty(){
+        return waitClickableElement("//span[contains(text(),'Товарів: 0')]");
     }
 }

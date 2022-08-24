@@ -10,7 +10,7 @@ public class SearchProductPage extends BasePage {
         super(driver);
     }
     public WebElement getChooseProduct(){
-        return waitClickableElement("(//a[@href='https://rockway.biz/ua/futbolka-eskimo-callboy-king-of-the-rabbits'])[2]");
+        return waitClickableElement("//a[text()='Футболка Lil Peep (чорна)']");
     }
     public WebElement getResultWhite(){
         return waitClickableElement("//h1");

@@ -10,7 +10,7 @@ public class ProductPage extends BasePage {
         super(driver);
     }
     public WebElement getSize(){
-        return waitClickableElement("//span[text()='XL']");
+        return waitClickableElement("//span[text()='M']");
     }
     public WebElement buy(){
         return waitClickableElement("//button[@id='button-cart-product']");

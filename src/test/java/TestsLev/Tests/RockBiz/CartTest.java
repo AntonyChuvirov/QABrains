@@ -24,6 +24,10 @@ public class CartTest extends TestInit {
         productPage.buy().click();
         cartPage.popUpBascket().click();
 
-        Assert.assertEquals(cartPage.text().getText(),"Оформлення замовлення");
+        Assert.assertEquals(cartPage.basketWithProduct().getText(), "Товарів: 1 (200 грн)");
+
+        cartPage.delbtn().click();
+
+        Assert.assertEquals(cartPage.baskeEmpty().getText(),"Товарів: 0 (0 грн)");
     }
 }
