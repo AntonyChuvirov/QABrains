@@ -24,6 +24,7 @@ public abstract class BasePage {
     }
 
     int BASIC_TIME = 15;
+
     public WebElement $(String locator) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(BASIC_TIME));
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
@@ -33,6 +34,12 @@ public abstract class BasePage {
     public List<WebElement> waitVisibilityOfAllElements(String locator) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(BASIC_TIME));
         wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(locator)));
+        return driver.findElements(By.xpath(locator));
+    }
+
+    public List<WebElement> waitClickableAllElements(String locator) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(BASIC_TIME));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
         return driver.findElements(By.xpath(locator));
     }
 }

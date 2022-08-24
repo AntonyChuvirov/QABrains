@@ -1,8 +1,11 @@
 package TestDima.HotlinePages;
 
 import BaseClasses.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
+import java.util.List;
 
 public class ProductsPageElementsHotline extends BasePage {
 
@@ -111,36 +114,20 @@ public class ProductsPageElementsHotline extends BasePage {
         return $("//li[.='Спорт, Активний відпочинок']");
     }
 
-    public WebElement getBtnSportCatalogList() {
-        return $("//div[@class='catalog-list']");
-    }
-
-    public WebElement getBtnBicycleComputers() {
-        return $("//div[@class='viewbox scroll-smooth-to-active']//div[4]//a[.=\"Велокомп'ютери\"]");
+    public List<WebElement> getLisProductsSportsSelection() {
+       return waitVisibilityOfAllElements("//a[contains(text(),'Велокомп')]");
     }
 
     public WebElement getNewPageWithNameProducts() {
         return $("//h1[@class='catalog-title__main']");
     }
 
-    public WebElement getFieldWithPagesNumbers() {
-        return $("//div[@class='pagination feed-paginate m_b-15']");
-    }
-
-    public WebElement getBtnPageNumber5() {
-        return $("//div[@class='pagination__pages flex']/a[contains(.,'5')]");
-    }
-
-    public WebElement getListProducts() {
-        return $("//div[@class='list-body__content content flex-wrap']");
-    }
-
-    public WebElement getPolarV650() {
-        return $("//a[contains(.,'Polar V650')]");
+    public List<WebElement> getListProducts() {
+        return waitVisibilityOfAllElements("//div[@class='list-item__photo']");
     }
 
     public WebElement getPageWithNameProduct1() {
-        return $("//h1[@class='catalog-title__main']");
+        return $("//div[1]/h1[1]");
     }
 
     public WebElement getPageWithNameProduct2() {
@@ -263,7 +250,7 @@ public class ProductsPageElementsHotline extends BasePage {
     }
 
     public WebElement getButtonDisplayProduct1(){
-        return $("//div[@class=\"list-headers__switch-item icon icon--view-list\"]");
+        return $("//div[@class='list-headers__switch-item icon icon--view-list']");
     }
 
     public WebElement getButtonDisplayProduct2(){
