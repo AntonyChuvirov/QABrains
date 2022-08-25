@@ -1,10 +1,11 @@
 package TestsOlya.pageObject;
 
+import BaseClasses.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class OLXHomePageElenents extends BasePage{
+public class OLXHomePageElenents extends BasePage {
     public WebElement getCheckCloseIcon(){
         return driver.findElement(By.xpath("//button[@class='closeIcon']"));
     }

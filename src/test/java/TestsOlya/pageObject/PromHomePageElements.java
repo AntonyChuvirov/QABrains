@@ -1,5 +1,6 @@
 package TestsOlya.pageObject;
 
+import BaseClasses.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -40,6 +41,26 @@ public class PromHomePageElements extends BasePage {
 
     public WebElement getPersonalAccount() {
         return driver.findElement(By.xpath("//a[@data-qaid='employee_cabinet']"));}
+
+    public WebElement getCheckSerch(){return waitClickableElement("//a[@href='/ua/search?search_term=%D0%97%D0%B2%D0%BE%D0%BB%D0%BE%D0%B6%D1%83%D0%B2%D0%B0%D1%87%20%D0%BF%D0%BE%D0%B2%D1%96%D1%82%D1%80%D1%8F&category=625']");}
+    public WebElement getCheckNowBuying() {
+        return waitClickableElement("//h1[@class='_3Trjq gwkkx F7Tdh jF03G']");}
+    public WebElement getCheckUAA() {
+        return waitClickableElement(" //span[@class='_3Trjq F7Tdh aeJVe aXB7S']");}
+    public WebElement getCheckRU() {
+        return waitClickableElement("//span[@class='_3Trjq F7Tdh aeJVe aXB7S']");}
+
+    public WebElement getCheckChat() {
+        return waitClickableElement("//span[@class='_3Trjq jF03G F7Tdh']");}
+    public WebElement getCheckMore() {
+        return waitClickableElement("//h1[@class='_3Trjq gwkkx F7Tdh jF03G']");}
+    public WebElement getCheckCreateStore() {
+        return waitClickableElement("//span[@class='_3Trjq F7Tdh CG58O']");}
+
+    public WebElement getCheckRegion() {
+        return waitClickableElement(" //span[@class='_3Trjq R2ynx aXB7S gwkkx']");}
+    public WebElement getCheckCreateAccount() {
+        return waitClickableElement("//span[@class='_3Trjq ffgjE']");}
 
 }
 

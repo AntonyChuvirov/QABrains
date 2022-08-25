@@ -1,10 +1,10 @@
-package TestsOlya;
+package TestsOlya.Tests;
 
+import BaseClasses.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import TestsOlya.pageObject.RozetkaHomePageHelper;
 import TestsOlya.pageObject.RozetkaSearchResultPage;
-import TestsOlya.pageObject.TestInit;
 
 public class TestRozetka extends TestInit {
     @Test
@@ -25,14 +25,7 @@ public class TestRozetka extends TestInit {
 
         rozetkaHomePageHelper.getSearchFieldRozetka().sendKeys("Зубна щітка");
         rozetkaHomePageHelper.getSearchImage().click();
-    }
-
-    @Test
-    public void clicklanguageChangeRU() {
-        RozetkaHomePageHelper rozetkaHomePageHelper = new RozetkaHomePageHelper(driver);
-        rozetkaHomePageHelper.navigateRozetka();
-
-        rozetkaHomePageHelper.getlanguageChangeRU().click();
+        Assert.assertTrue(rozetkaHomePageHelper.getPageWithNameProduct().getText().contains("Зубна щітка"));
     }
 
     @Test
@@ -41,6 +34,16 @@ public class TestRozetka extends TestInit {
         rozetkaHomePageHelper.navigateRozetka();
 
         rozetkaHomePageHelper.getlanguageChangeUA().click();
+        Assert.assertTrue(rozetkaHomePageHelper.getCheckUA().getText().contains("Знайти"));
+    }
+
+    @Test
+    public void clicklanguageChangeRU() {
+        RozetkaHomePageHelper rozetkaHomePageHelper = new RozetkaHomePageHelper(driver);
+        rozetkaHomePageHelper.navigateRozetka();
+
+        rozetkaHomePageHelper.getlanguageChangeRU().click();
+        Assert.assertTrue(rozetkaHomePageHelper.getCheckRU().getText().contains("Найти"));
     }
 
     @Test
@@ -49,7 +52,7 @@ public class TestRozetka extends TestInit {
         rozetkaHomePageHelper.navigateRozetka();
 
         rozetkaHomePageHelper.getCheckCatalog().click();
-
+        Assert.assertTrue(rozetkaHomePageHelper.getCheckCatalogIMG().isDisplayed());
     }
 
     @Test
@@ -59,6 +62,7 @@ public class TestRozetka extends TestInit {
 
         rozetkaHomePageHelper.getCheckCatalog().click();
         rozetkaHomePageHelper.getCheckCatalogZoo().click();
+        Assert.assertTrue(rozetkaHomePageHelper.getCheckCatalogZOO().isDisplayed());
     }
 
     @Test
@@ -68,6 +72,7 @@ public class TestRozetka extends TestInit {
 
         rozetkaHomePageHelper.getSearchFieldRozetka().sendKeys("Зубна щітка/n");
         rozetkaHomePageHelper.getCheckLogo().click();
+        Assert.assertTrue(rozetkaHomePageHelper.getCheckUA().getText().contains("Знайти"));
     }
 
     @Test
@@ -76,6 +81,7 @@ public class TestRozetka extends TestInit {
         rozetkaHomePageHelper.navigateRozetka();
 
         rozetkaHomePageHelper.getCheckFreeDelivery().isDisplayed();
+        Assert.assertTrue(rozetkaHomePageHelper.getCheckFreeDelivery().isDisplayed());
     }
 
     @Test
@@ -83,6 +89,7 @@ public class TestRozetka extends TestInit {
         RozetkaHomePageHelper rozetkaHomePageHelper = new RozetkaHomePageHelper(driver);
         rozetkaHomePageHelper.navigateRozetka();
         rozetkaHomePageHelper.getSales().click();
+        Assert.assertTrue(rozetkaHomePageHelper.getCheckSale().isDisplayed());
     }
 
     @Test
@@ -90,6 +97,8 @@ public class TestRozetka extends TestInit {
         RozetkaHomePageHelper rozetkaHomePageHelper = new RozetkaHomePageHelper(driver);
         rozetkaHomePageHelper.navigateRozetka();
         rozetkaHomePageHelper.getMore().click();
+        Assert.assertTrue(rozetkaHomePageHelper.getCheckMoree().isDisplayed());
+
     }
 
 }
