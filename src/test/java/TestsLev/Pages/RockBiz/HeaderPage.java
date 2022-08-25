@@ -25,29 +25,47 @@ public class HeaderPage extends BasePage {
         return waitClickableElement("//a[contains(text(),'Види')]");
     }
 
-    public WebElement getLinks() {
+    public WebElement getLinkInstagram() {
         return waitClickableElement("//a[@href='https://www.instagram.com/rockwaybiz/']");
     }
 
-    public WebElement getLenguageBtn(){
+    public WebElement getLinkFacebook() {
+        return waitClickableElement("//i[@class='fab fa-facebook-square']");
+    }
+
+    public WebElement getTelegram() {
+        return waitClickableElement("//i[@class='fab fa-telegram-plane']");
+    }
+
+    public WebElement getPhones() {
+        return waitClickableElement("//i[@class='fas fa-mobile-alt dropdown-toggle social']");
+    }
+
+    public WebElement phoneNumber() {
+        return waitClickableElement("//li[@class='header_phone1']");
+    }
+
+    public WebElement getLenguageBtn() {
         return waitClickableElement("//div[@id='form-language']");
     }
 
-    public WebElement getRusLenguage(){
+    public WebElement getRusLenguage() {
         return waitClickableElement("(//button[@class='btn btn-link btn-block language-select'])[2]");
     }
-    public WebElement getUaLenguage(){
+
+    public WebElement getUaLenguage() {
         return waitClickableElement("(//button[@class='btn btn-link btn-block language-select'])[1]");
     }
 
-    public WebElement getVzuttya(){
+    public WebElement getVzuttya() {
         return waitClickableElement("(//a[@class='dropdown-toggle dropdown-img'])[3]");
     }
 
-    public WebElement getClothes(){
+    public WebElement getClothes() {
         return waitClickableElement("(//a[@class='dropdown-toggle dropdown-img'])[2]");
     }
-    public WebElement getTShirt(){
+
+    public WebElement getTShirt() {
         return waitClickableElement("//a[text()='Футболки']");
     }
 }
