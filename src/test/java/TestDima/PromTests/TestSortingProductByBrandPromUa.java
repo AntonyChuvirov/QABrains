@@ -19,13 +19,14 @@ public class TestSortingProductByBrandPromUa extends TestInit {
 
         ProductsPagePromUa productsPagePromUa = new ProductsPagePromUa(driver);
         Actions actions = new Actions(driver);
-        actions.moveToElement(productsPagePromUa.getBtnHouseAndGarden()).build().perform();
-        productsPagePromUa.clickProductFromListHouseAndGarden();
-        Assert.assertTrue(productsPagePromUa.getPageWithNameProductAfterCatalog().isDisplayed());
-        productsPagePromUa.clickTypeProductInListProducts();
-        Assert.assertTrue(productsPagePromUa.getPageWithNameProduct().isDisplayed());
-        productsPagePromUa.clickBtnShowAll();
-        productsPagePromUa.clickCheckBoxBrand();
+        actions.moveToElement(productsPagePromUa.getList1CatalogCategoryProducts().get(7)).build().perform();
+        Assert.assertTrue(productsPagePromUa.getListCategoryProducts().isDisplayed());
+        productsPagePromUa.clickCategoryProductInListElementsCategoryProducts();
+        Assert.assertTrue(productsPagePromUa.getPageNameTypesProduct().isDisplayed());
+        productsPagePromUa.clickProductInListTypeProducts();
+        Assert.assertTrue(productsPagePromUa.getPageNameProduct().isDisplayed());
+        productsPagePromUa.clickBtnShowAllBrands();
+        productsPagePromUa.chooseBrands();
         Assert.assertTrue(productsPagePromUa.getProductsAfterSorting().isDisplayed());
     }
 }

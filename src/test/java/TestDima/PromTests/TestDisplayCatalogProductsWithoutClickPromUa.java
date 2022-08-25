@@ -6,10 +6,10 @@ import TestDima.PromPages.ProductsPagePromUa;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-public class TestChangeCatalogWithoutClickPromUa extends TestInit {
+public class TestDisplayCatalogProductsWithoutClickPromUa extends TestInit {
 
     @Test
-    public void checkChangeCatalogWithoutClickPromUa(){
+    public void checkCatalogProductsWithoutClickPromUa(){
 
         HomePagePromUa homePagePromUa = new HomePagePromUa(driver);
 
@@ -17,9 +17,6 @@ public class TestChangeCatalogWithoutClickPromUa extends TestInit {
 
         ProductsPagePromUa productsPagePromUa = new ProductsPagePromUa(driver);
 
-        Actions actions = new Actions(driver);
-
-        productsPagePromUa.moveToCategoriesProductInListCatalogWithCategoriesProduct();
-        actions.moveToElement(productsPagePromUa.getBtnMedicinesAndMedicalProducts()).build().perform();
+        productsPagePromUa.changeCategoriesProductInListCatalog();
     }
 }
