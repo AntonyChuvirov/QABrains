@@ -61,16 +61,12 @@ public class ProductsPageHotlineHotline extends ProductsPageElementsHotline {
         getBtnSportSection().click();
     }
 
-    public void clickBnBicycleComputers() {
-        getBtnBicycleComputers().click();
+    public void clickLisProductsSportsSelection(){
+        getLisProductsSportsSelection().get(0).click();
     }
 
-    public void clickBtnPageNumber5() {
-        getBtnPageNumber5().click();
-    }
-
-    public void clickPolarV650() {
-        getPolarV650().click();
+    public void clickElementFromListProducts(){
+        getListProducts().get(3).click();
     }
 
     public void clickBtnBaggage() {
