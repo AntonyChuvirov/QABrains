@@ -9,7 +9,6 @@ public class RozetkaHomePageHelper extends RozetkaHomePageElements {
         super(driver);
     }
 
-    public void navigateRozetka() {
-        driver.get("https://rozetka.com.ua/ua/");
+    public void navigateRozetka() {driver.get("https://rozetka.com.ua/ua/");
     }
 }
