@@ -19,7 +19,7 @@ public class TestSearchFieldPromUa extends TestInit {
 
         ProductsPagePromUa productsPagePromUa = new ProductsPagePromUa(driver);
 
-        Assert.assertTrue(productsPagePromUa.getPageWithNameProduct().getText().contains("Xiaomi Redmi Note 11"));
+        Assert.assertTrue(productsPagePromUa.getPageNameProduct().getText().contains("Xiaomi Redmi Note 11"));
         Assert.assertTrue(productsPagePromUa.getFieldWithProduct().isDisplayed());
     }
 }

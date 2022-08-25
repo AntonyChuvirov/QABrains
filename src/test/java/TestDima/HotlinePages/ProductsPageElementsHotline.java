@@ -3,6 +3,7 @@ package TestDima.HotlinePages;
 import BaseClasses.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import java.util.List;
 
 public class ProductsPageElementsHotline extends BasePage {
 
@@ -111,36 +112,20 @@ public class ProductsPageElementsHotline extends BasePage {
         return waitClickableElement("//li[.='Спорт, Активний відпочинок']");
     }
 
-    public WebElement getBtnSportCatalogList() {
-        return waitClickableElement("//div[@class='catalog-list']");
-    }
-
-    public WebElement getBtnBicycleComputers() {
-        return waitClickableElement("//div[@class='viewbox scroll-smooth-to-active']//div[4]//a[.=\"Велокомп'ютери\"]");
+    public List<WebElement> getLisProductsSportsSelection() {
+       return waitVisibleOfAllElements("//a[contains(text(),'Велокомп')]");
     }
 
     public WebElement getNewPageWithNameProducts() {
         return waitClickableElement("//h1[@class='catalog-title__main']");
     }
 
-    public WebElement getFieldWithPagesNumbers() {
-        return waitClickableElement("//div[@class='pagination feed-paginate m_b-15']");
-    }
-
-    public WebElement getBtnPageNumber5() {
-        return waitClickableElement("//div[@class='pagination__pages flex']/a[contains(.,'5')]");
-    }
-
-    public WebElement getListProducts() {
-        return waitClickableElement("//div[@class='list-body__content content flex-wrap']");
-    }
-
-    public WebElement getPolarV650() {
-        return waitClickableElement("//a[contains(.,'Polar V650')]");
+    public List<WebElement> getListProducts() {
+        return waitVisibleOfAllElements("//div[@class='list-item__photo']");
     }
 
     public WebElement getPageWithNameProduct1() {
-        return waitClickableElement("//h1[@class='catalog-title__main']");
+        return waitClickableElement("//div[1]/h1[1]");
     }
 
     public WebElement getPageWithNameProduct2() {
@@ -263,7 +248,7 @@ public class ProductsPageElementsHotline extends BasePage {
     }
 
     public WebElement getButtonDisplayProduct1(){
-        return waitClickableElement("//div[@class=\"list-headers__switch-item icon icon--view-list\"]");
+        return waitClickableElement("//div[@class='list-headers__switch-item icon icon--view-list']");
     }
 
     public WebElement getButtonDisplayProduct2(){

@@ -19,7 +19,7 @@ public class TestAddProductToBasketPromUa extends TestInit {
 
         ProductsPagePromUa productsPagePromUa = new ProductsPagePromUa(driver);
 
-        Assert.assertTrue(productsPagePromUa.getPageWithNameProduct().getText().contains("Кава"));
+        Assert.assertTrue(productsPagePromUa.getPageNameProduct().getText().contains("Кава"));
         Assert.assertTrue(productsPagePromUa.getFieldWithProduct().isDisplayed());
         productsPagePromUa.clickCoffee();
         Assert.assertTrue(productsPagePromUa.getBtnBuyProduct().isDisplayed());

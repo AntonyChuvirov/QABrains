@@ -37,7 +37,13 @@ public abstract class BasePage {
         return driver.findElements(By.xpath(locator));
     }
 
-    public void actionsMoveTo(WebElement element) {
+    public List<WebElement> waitClickableAllElements(String locator) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(BASIC_TIME));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
+        return driver.findElements(By.xpath(locator));
+    }
+
+    public void actionsMoveTo(WebElement element){
         Actions actions = new Actions(driver);
         actions.moveToElement(element).build().perform();
     }
