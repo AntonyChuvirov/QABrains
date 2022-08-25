@@ -1,8 +1,10 @@
 package Yevgenii.EpicPage;
 
+import BaseClasses.TestInit;
 import Yevgenii.EpicElements.HomeElements;
 import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 public class HomePage extends HomeElements {
 
@@ -58,6 +60,25 @@ public class HomePage extends HomeElements {
                 getSlideNextBtn().click();
             }
             assert (getActivePhotoSkelet().get(i).isDisplayed());
+        }
+    }
+
+    public void inputSearchFieldCarSeats() {
+        getSearchField().sendKeys("Автокрісла\n");
+    }
+
+    TestInit testInit = new TestInit();
+    public void clickAllBrandsProducts() {
+        for (int i = 0; i < getAllBoxBrands().size(); i++) {
+            System.out.println(i);
+            getAllBoxBrands().get(i).click();
+            testInit.sleep(3);
+        }
+    }
+
+    public void getSeeListSelectedProducts() {
+        for (int i = 0; i < getVisibleListSelectedProducts().size(); i++) {
+            Assert.assertTrue(getVisibleListSelectedProducts().get(i).isDisplayed());
         }
     }
 }

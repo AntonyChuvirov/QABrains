@@ -37,7 +37,7 @@ public abstract class BasePage {
         return driver.findElements(By.xpath(locator));
     }
 
-    public void actionsMoveTo(WebElement element){
+    public void actionsMoveTo(WebElement element) {
         Actions actions = new Actions(driver);
         actions.moveToElement(element).build().perform();
     }

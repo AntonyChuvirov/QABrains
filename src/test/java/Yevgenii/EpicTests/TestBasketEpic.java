@@ -14,16 +14,18 @@ public class TestBasketEpic extends TestInit {
     public void checkBuyRemoveBasket() {
         HomePage homePage = new HomePage(driver);
         homePage.open();
-        homePage.closePopupWindow().click();
         homePage.clickMenuProductBtn();
         homePage.actionsMoveTo(homePage.selectSectionProductContraceptives());
         homePage.clickSectionProductContraceptives();
         ContraceptivesPage contraceptivesPage = new ContraceptivesPage(driver);
         contraceptivesPage.actionsMoveTo(contraceptivesPage.selectBuyContraceptiveBtn());
         contraceptivesPage.clickBuyContraceptiveBtn();
+
         Assert.assertTrue(contraceptivesPage.getSeeProductAddedBascket().isDisplayed());
+
         contraceptivesPage.clickRemoveProductBascketBtn();
         contraceptivesPage.clickСonfirmRemoveProductBascket();
+
         Assert.assertTrue(contraceptivesPage.getVisibilityRemoveProductBascket().isDisplayed());
     }
 }

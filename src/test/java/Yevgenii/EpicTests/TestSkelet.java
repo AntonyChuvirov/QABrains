@@ -12,8 +12,8 @@ public class TestSkelet extends TestInit {
     public void checkPhotoSkelet() {
         HomePage homePage = new HomePage(driver);
         homePage.open();
-        homePage.closePopupWindow().click();
         homePage.inputSearchFieldSkelet();
+        sleep(3);
         homePage.clickPhotoSkelet();
     }
 }

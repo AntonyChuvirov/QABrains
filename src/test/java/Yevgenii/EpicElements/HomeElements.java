@@ -59,10 +59,6 @@ public class HomeElements extends BasePage {
         return waitClickableElement("//a[@class='catalog-menu__level-2'][@title='Засоби контрацепції']");
     }
 
-    public WebElement closePopupWindow() {
-        return waitClickableElement("//div[@class='_lf1rdL']");
-    }
-
     public WebElement getVisibilityTextContraceptives() {
         return waitClickableElement("//h1['Засоби контрацепції']");
     }
@@ -77,5 +73,17 @@ public class HomeElements extends BasePage {
 
     public List<WebElement> getActivePhotoSkelet() {
         return waitVisibleOfAllElements("//img[contains(@alt,'анатомічний скелет людини 181 см - фото')]");
+    }
+
+    public List<WebElement> getAllBoxBrands() {
+        return waitVisibleOfAllElements("//input[@data-parent-name='brand']/..");
+    }
+
+    public WebElement getNextBoxBrands() {
+        return waitClickableElement("(//button[@class='btn btn--small btn--dark filter-block__more'])[1]");
+    }
+
+    public List<WebElement> getVisibleListSelectedProducts() {
+        return waitVisibleOfAllElements("//div[@class='checked-items__element']");
     }
 }
