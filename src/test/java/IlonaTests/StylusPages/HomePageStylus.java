@@ -29,4 +29,7 @@ public class HomePageStylus extends BasePage {
     public WebElement checkBtnMicrophone(){
         return waitClickableElement("//div[@class = 'bottom-search']//*[name() = 'svg']");
     }
+    public WebElement clickBtnInformation(){
+        return waitClickableElement("//div[@class = 'header-top']//button[contains(text(),'Інформація')]");
+    }
 }
