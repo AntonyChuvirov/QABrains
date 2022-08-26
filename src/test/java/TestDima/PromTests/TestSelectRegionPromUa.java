@@ -9,7 +9,7 @@ public class TestSelectRegionPromUa extends TestInit {
 
 
     @Test
-    public void checkSelectRegionPromUa(){
+    public void checkSelectRegionPromUa() {
 
         HomePagePromUa homePagePromUa = new HomePagePromUa(driver);
 

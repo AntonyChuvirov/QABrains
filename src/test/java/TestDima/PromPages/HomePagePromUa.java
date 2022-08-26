@@ -1,6 +1,7 @@
 package TestDima.PromPages;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class HomePagePromUa extends HomePageElementsPromUa {
 
@@ -13,23 +14,27 @@ public class HomePagePromUa extends HomePageElementsPromUa {
         driver.get("https://prom.ua/ua/");
     }
 
-    public void clickBtnSearch(){
+    public void clickBtnSearch() {
         getBtnSearch().click();
     }
 
-    public void clickFieldNameRegion(){
+    public void clickFieldNameRegion() {
         getFieldNameRegion().click();
     }
 
-    public void clickTextWithNameRegionUnderFieldInput(){
+    public void clickTextWithNameRegionUnderFieldInput() {
         getTextWithNameRegionUnderFieldInput().click();
     }
 
-    public void clickBtnLanguageUkrainian(){
+    public void clickBtnLanguageUkrainian() {
         getBtnLanguageUkrainian().click();
     }
 
-    public void clickBtnLanguageRussian(){
+    public void clickBtnLanguageRussian() {
         getBtnLanguageRussian().click();
+    }
+
+    public void clickProductInListByNow() {
+        getListElementsByNow().get(5).click();
     }
 }

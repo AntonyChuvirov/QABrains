@@ -3,6 +3,7 @@ package TestDima.PromPages;
 import BaseClasses.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
 import java.util.List;
 
 public class ProductsPageElementsPromUa extends BasePage {
@@ -47,7 +48,7 @@ public class ProductsPageElementsPromUa extends BasePage {
     }
 
     //------------------------TestDisplayCatalogProductsWithoutClickPromUa-----------------------------------------
-    public List<WebElement> getList1CatalogCategoryProducts(){
+    public List<WebElement> getList1CatalogCategoryProducts() {
         return waitVisibleOfAllElements("(//div[@class='M3v0L pRWt9 pz1E1 DUxBc'])[1]//li[@class='YSmsd']");
     }
 
@@ -55,7 +56,7 @@ public class ProductsPageElementsPromUa extends BasePage {
         return waitVisibleOfAllElements("(//div[@class='M3v0L pRWt9 pz1E1 DUxBc'])[2]//li[@class='YSmsd']");
     }
 
-    public WebElement getListCategoryProducts(){
+    public WebElement getListCategoryProducts() {
         return waitClickableElement("//div[@class='nSa3G']");
     }
 
@@ -64,8 +65,8 @@ public class ProductsPageElementsPromUa extends BasePage {
         return waitClickableAllElements("//div[@class='M3v0L -pUjB']/a");
     }
 
-    public List<WebElement> getListElementsCategoryProducts(){
-        return waitClickableAllElements("//div[@class=\"nSa3G\"]//div[@class=\"M3v0L -pUjB\"]");
+    public List<WebElement> getListElementsCategoryProducts() {
+        return waitClickableAllElements("//div[@class='nSa3G']//div[@class='M3v0L -pUjB']");
     }
 
     public List<WebElement> getListElementsTypeProducts() {
@@ -82,5 +83,30 @@ public class ProductsPageElementsPromUa extends BasePage {
 
     public WebElement getProductsAfterSorting() {
         return waitClickableElement("//div[@data-qaid='product_gallery']//a[@target='_self']");
+    }
+
+    //    -----------------------------TestFilterPromUa-----------------------------------------------------------
+    public List<WebElement> getListElementsMethodBuy() {
+        return waitClickableAllElements("//div[@class='MafxA Nt5uf']//button[@type='button']");
+    }
+
+    public List<WebElement> getListDelivery() {
+        return waitVisibleOfAllElements("//div[@data-qatitle='Доставка']//input");
+    }
+
+    public List<WebElement> getListElementsPriceRange() {
+        return waitClickableAllElements("(//div[@class='MafxA IIzXA'])[1]//input");
+    }
+
+    public WebElement getBtnOkPriceRange() {
+        return waitClickableElement("(//div[@class='MafxA IIzXA'])[1]//span");
+    }
+
+    public List<WebElement> getListProducts() {
+        return waitClickableAllElements("//div[@class='l-GwW js-productad']");
+    }
+
+    public WebElement getBtnCleanAllInFilter() {
+        return waitClickableElement("//span[text()='Cкинути все']");
     }
 }
