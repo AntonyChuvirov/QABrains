@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class TestFilterPromUa extends TestInit {
 
     @Test
-    public void checkPromUa() {
+    public void checkFilterPromUa() {
 
         HomePagePromUa homePagePromUa = new HomePagePromUa(driver);
 
