@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class TestSearchFieldPromUa extends TestInit {
 
     @Test
-    public void checkSearchFieldPromUa(){
+    public void checkSearchFieldPromUa() {
 
         HomePagePromUa homePagePromUa = new HomePagePromUa(driver);
 

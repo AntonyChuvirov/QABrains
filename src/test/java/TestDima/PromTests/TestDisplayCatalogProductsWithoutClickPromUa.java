@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class TestDisplayCatalogProductsWithoutClickPromUa extends TestInit {
 
     @Test
-    public void checkCatalogProductsWithoutClickPromUa(){
+    public void checkCatalogProductsWithoutClickPromUa() {
 
         HomePagePromUa homePagePromUa = new HomePagePromUa(driver);
 

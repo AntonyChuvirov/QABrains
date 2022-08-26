@@ -18,7 +18,9 @@ public class TestSortingProductByBrandPromUa extends TestInit {
         homePagePromUa.goToHomePagePromUa();
 
         ProductsPagePromUa productsPagePromUa = new ProductsPagePromUa(driver);
+
         Actions actions = new Actions(driver);
+
         actions.moveToElement(productsPagePromUa.getList1CatalogCategoryProducts().get(7)).build().perform();
         Assert.assertTrue(productsPagePromUa.getListCategoryProducts().isDisplayed());
         productsPagePromUa.clickCategoryProductInListElementsCategoryProducts();

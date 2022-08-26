@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class TestChangeTheLanguagePromUa extends TestInit {
 
     @Test
-    public void checkChangeTheLanguagePromUa(){
+    public void checkChangeTheLanguagePromUa() {
 
         HomePagePromUa homePagePromUa = new HomePagePromUa(driver);
 

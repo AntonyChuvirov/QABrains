@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class TestAddProductToBasketPromUa extends TestInit {
 
     @Test
-    public void checkAddProductToBasketPromUa(){
+    public void checkAddProductToBasketPromUa() {
 
         HomePagePromUa homePagePromUa = new HomePagePromUa(driver);
 
