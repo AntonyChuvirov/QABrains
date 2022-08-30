@@ -20,5 +20,6 @@ public class AuthorizationTest extends TestInit {
         authorizationPage.getEnter().click();
 
         Assert.assertEquals(driver.getCurrentUrl(),"https://rockway.biz/ua/my-account/");
+
     }
 }
